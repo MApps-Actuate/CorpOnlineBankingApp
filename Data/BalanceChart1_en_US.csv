@@ -1,0 +1,10 @@
+Cat2,Cat3,Val1
+String,String,Double
+Credits (Incoming),ACH,1273098
+Credits (Incoming),Wire,1381495
+Credits (Incoming),Book,1287691
+Credits (Incoming),Other,1481555
+Debits (Outgoing),ACH,1453692
+Debits (Outgoing),Wire,1329667
+Debits (Outgoing),Book,1091646
+Debits (Outgoing),Other,775975

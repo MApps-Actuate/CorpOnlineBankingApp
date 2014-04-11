@@ -1,0 +1,5 @@
+Name,Amount,Target,LowerLimit,Threshold1,Threshold2,UpperLimit
+String,Double,Double,Double,Double,Double,Double
+Closing Available,1800000,1250000,0,750000,1000000,2000000
+Opening Available,1730000,1250000,0,750000,1000000,2000000
+Available Float,86000,100000,0,50000,75000,150000

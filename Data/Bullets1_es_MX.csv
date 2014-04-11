@@ -1,0 +1,5 @@
+Name,Amount,Target,LowerLimit,Threshold1,Threshold2,UpperLimit
+String,Double,Double,Double,Double,Double,Double
+Cierre Disponible,1800000,1250000,0,750000,1000000,2000000
+El Abrirse Disponible,1730000,1250000,0,750000,1000000,2000000
+Flotador Disponible,86000,100000,0,50000,75000,150000

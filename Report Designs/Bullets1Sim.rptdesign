@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="comments">Copyright (c) 2007 &lt;&lt;Your Company Name here>></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <html-property name="description">Creates a blank report with no predefined content.</html-property>
+    <property name="units">in</property>
+    <text-property name="displayName">Blank Report</text-property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">CorpOnlineBankingResources/Connection.rptlibrary</property>
+            <property name="namespace">Connection1</property>
+        </structure>
+        <structure>
+            <property name="fileName">CorpOnlineBankingResources/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="FF" id="84"
+ extends="Connection1.FF"/>
+    </data-sources>
+    <data-sets>
+        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Data Set" id="83">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Name</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Name</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Amount</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Amount</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Target</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Target</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">LowerLimit</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">LowerLimit</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Threshold1</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Threshold1</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Threshold2</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Threshold2</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">UpperLimit</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">UpperLimit</text-property>
+                </structure>
+            </list-property>
+            <list-property name="parameters"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Name</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Amount</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Target</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">LowerLimit</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Threshold1</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Threshold2</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">UpperLimit</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <method name="beforeOpen"><![CDATA[var tmpstr = "Bullets1Sim_" + reportContext.getLocale() + ".csv";
+this.queryText = this.queryText.replace("Bullets1Sim_en_US.csv",tmpstr);]]></method>
+            <property name="dataSource">FF</property>
+            <list-property name="resultSet">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Name</property>
+                    <property name="nativeName">Name</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Amount</property>
+                    <property name="nativeName">Amount</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Target</property>
+                    <property name="nativeName">Target</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">LowerLimit</property>
+                    <property name="nativeName">LowerLimit</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">Threshold1</property>
+                    <property name="nativeName">Threshold1</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">Threshold2</property>
+                    <property name="nativeName">Threshold2</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">UpperLimit</property>
+                    <property name="nativeName">UpperLimit</property>
+                    <property name="dataType">float</property>
+                </structure>
+            </list-property>
+            <xml-property name="queryText"><![CDATA[select "Name", "Amount", "Target", "LowerLimit", "Threshold1", "Threshold2", "UpperLimit" from "Bullets1Sim_en_US.csv" : {"Name","Name",STRING;"Amount","Amount",DOUBLE;"Target","Target",DOUBLE;"LowerLimit","LowerLimit",DOUBLE;"Threshold1","Threshold1",DOUBLE;"Threshold2","Threshold2",DOUBLE;"UpperLimit","UpperLimit",DOUBLE}]]></xml-property>
+            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Name</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Name</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Amount</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Amount</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Target</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Target</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>LowerLimit</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>LowerLimit</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Threshold1</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Threshold1</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Threshold2</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Threshold2</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>UpperLimit</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>UpperLimit</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+        </oda-data-set>
+    </data-sets>
+    <styles>
+        <style name="crosstab" id="4">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="topMargin">1in</property>
+            <property name="leftMargin">1.25in</property>
+            <property name="bottomMargin">1in</property>
+            <property name="rightMargin">1.25in</property>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <grid id="42">
+            <property name="marginTop">-32pt</property>
+            <property name="marginBottom">0pt</property>
+            <property name="textAlign">center</property>
+            <property name="verticalAlign">top</property>
+            <property name="height">1.6354166667in</property>
+            <property name="width">3.8958333333in</property>
+            <expression name="bookmark">"table"</expression>
+            <column id="43">
+                <property name="width">3.8958333333in</property>
+            </column>
+            <row id="44">
+                <property name="height">0.4479166667in</property>
+                <cell id="45">
+                    <text id="28">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<span>&amp;nbsp;</span>
+  <script language="JavaScript" src="http://localhost:8700/iportal/iportal/mashboard/shared/charts/FusionChartsWMode.js"></script>]]></text-property>
+                    </text>
+                    <text id="81">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<script>
+function runit(name,amount) { 
+	//var elem = document.getElementById('tot1');
+	//var newAmt = elem.innerHTML.replace(",","");
+	//newAmt = newAmt.replace(",","");
+	//newAmt = parseInt(newAmt) - amount;
+	//elem.innerHTML = addCommas(newAmt);
+
+	var name3 = name.substr(0,3);
+	if (name3 == "Rev") {
+		setSimChart(1526000);
+		showElement("Sim");
+		showElement("Tra");
+		elem.style.backgroundColor = "#FFCD9A"; // light orange background on Closed Available cash amount
+	}
+	else if (name3 == "Dom") {
+		setSimChart(776500);
+		showElement("Dom");
+		showElement("DomVal");
+		showElement("DomDelX");
+	}
+}
+function addCommas(nStr)
+{
+	nStr += '';
+	x = nStr.split('.');
+	x1 = x[0];
+	x2 = x.length > 1 ? '.' + x[1] : '';
+	var rgx = /(\d+)(\d{3})/;
+	while (rgx.test(x1)) {
+		x1 = x1.replace(rgx, '$1' + ',' + '$2');
+	}
+	return x1 + x2;
+}
+function hideElement(elemID) {
+	var elem = document.getElementById(elemID);
+	elem.style.display = "none";
+}
+function showElement(elemID) {
+	var elem = document.getElementById(elemID);
+	elem.style.display = "block";
+}
+function hideAll() {
+	hideElement("Sim");
+	hideElement("Dom");
+	hideElement("DomVal");
+	hideElement("DomDelX");
+	hideElement("Tra");
+}
+function setSimChart(pAmount) {
+         var myChart = new FusionCharts("http://localhost:8700/iportal/iportal/mashboard/shared/charts/HBullet.swf", "chartId0", "375", "55", "0", "1");
+         //FFCD9A  FFAD5C  E07000
+	myChart.setDataXML("<chart paletteThemeColor='FFCD9A' bgColor='FFCD9A' majorTMColor='000000' plotFillColor='000000' targetColor='000000' formatNumberScale='1' lowerLimit='0' upperLimit='1500000' chartBottomMargin='10' chartLeftMargin='10' caption='Closing Available' subcaption='' showBorder='0' showValue='1' captionPadding='10' valuePadding='10' canvasLeftMargin='140' canvasRightMargin='60' ticksBelowGraph='0' baseFontSize='9' baseFontColor='000000'> <colorRange> <color minValue='0' maxValue='750000' /> <color minValue='750000' maxValue='1000000'/> <color minValue='1000000' maxValue='1500000'/> </colorRange> <value>"+pAmount+"</value> <target>1250000</target> </chart>");
+	myChart.render('chartdiv0');
+}
+</script>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+            <row id="46">
+                <cell id="47">
+                    <table id="33">
+                        <property name="dataSet">Data Set</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Name</property>
+                                <expression name="expression">dataSetRow["Name"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Amount</property>
+                                <expression name="expression">dataSetRow["Amount"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Target</property>
+                                <expression name="expression">dataSetRow["Target"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">LowerLimit</property>
+                                <expression name="expression">dataSetRow["LowerLimit"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Threshold1</property>
+                                <expression name="expression">dataSetRow["Threshold1"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Threshold2</property>
+                                <expression name="expression">dataSetRow["Threshold2"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                            <structure>
+                                <property name="name">UpperLimit</property>
+                                <expression name="expression">dataSetRow["UpperLimit"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                        </list-property>
+                        <property name="pageBreakInterval">50</property>
+                        <column id="40"/>
+                        <detail>
+                            <row id="36">
+                                <cell id="37">
+                                    <text id="41">
+                                        <property name="contentType">html</property>
+                                        <text-property name="content"><![CDATA[  <div id="chartdiv<VALUE-OF>row.__rownum</VALUE-OF>" align="center">
+         The chart will appear within this DIV. This text will be replaced by the chart.
+      </div>
+      <script type="text/javascript">
+         var myText = '<VALUE-OF>row["Name"]</VALUE-OF>';
+         var myChart = new FusionCharts("http://localhost:8700/iportal/iportal/mashboard/shared/charts/HBullet.swf", "myChartId<VALUE-OF>row.__rownum</VALUE-OF>", "375", "55", "0", "1");
+         myChart.setDataXML("<chart paletteThemeColor='005594' formatNumberScale='1' lowerLimit='<VALUE-OF>row["LowerLimit"]</VALUE-OF>' upperLimit='<VALUE-OF>row["UpperLimit"]</VALUE-OF>' chartBottomMargin='10' chartLeftMargin='10' caption='" + escape(myText) + "' subcaption='' showBorder='0' showValue='1' captionPadding='10' valuePadding='10' canvasLeftMargin='140' canvasRightMargin='60' ticksBelowGraph='0' baseFontSize='9'> <colorRange> <color minValue='<VALUE-OF>row["LowerLimit"]</VALUE-OF>' maxValue='<VALUE-OF>row["Threshold1"]</VALUE-OF>' /> <color minValue='<VALUE-OF>row["Threshold1"]</VALUE-OF>' maxValue='<VALUE-OF>row["Threshold2"]</VALUE-OF>' />  <color minValue='<VALUE-OF>row["Threshold2"]</VALUE-OF>' maxValue='<VALUE-OF>row["UpperLimit"]</VALUE-OF>' />  </colorRange>  <value><VALUE-OF>row["Amount"]</VALUE-OF></value> <target><VALUE-OF>row["Target"]</VALUE-OF></target>  </chart>");
+         myChart.render("chartdiv<VALUE-OF>row.__rownum</VALUE-OF>");
+      </script>  
+
+]]></text-property>
+                                    </text>
+                                </cell>
+                            </row>
+                        </detail>
+                    </table>
+                </cell>
+            </row>
+            <row id="48">
+                <cell id="49">
+                    <grid id="56">
+                        <property name="backgroundColor">#FFCD9A</property>
+                        <property name="width">100%</property>
+                        <expression name="bookmark">"Sim"</expression>
+                        <column id="57">
+                            <property name="width">1.6in</property>
+                        </column>
+                        <column id="58"/>
+                        <column id="73">
+                            <property name="backgroundColor">white</property>
+                            <property name="width">12px</property>
+                        </column>
+                        <row id="59">
+                            <cell id="60">
+                                <label id="74">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="fontWeight">bold</property>
+                                    <property name="fontStyle">italic</property>
+                                    <property name="textAlign">left</property>
+                                    <text-property name="text">Simulations</text-property>
+                                </label>
+                            </cell>
+                            <cell id="61"/>
+                            <cell id="70"/>
+                        </row>
+                        <row id="62">
+                            <cell id="63">
+                                <label id="52">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="textAlign">left</property>
+                                    <text-property name="text">Revolving LOC:</text-property>
+                                </label>
+                            </cell>
+                            <cell id="64">
+                                <label id="68">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="textAlign">right</property>
+                                    <text-property name="text">300,000</text-property>
+                                </label>
+                            </cell>
+                            <cell id="71">
+                                <image id="77">
+                                    <property name="source">embed</property>
+                                    <property name="imageName">deleteX.jpg</property>
+                                    <list-property name="action">
+                                        <structure>
+                                            <property name="linkType">none</property>
+                                        </structure>
+                                    </list-property>
+                                </image>
+                            </cell>
+                        </row>
+                        <row id="65">
+                            <cell id="66">
+                                <label id="53">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="textAlign">left</property>
+                                    <expression name="bookmark">"Dom"</expression>
+                                    <text-property name="text">Domestic Index Fund #1:</text-property>
+                                </label>
+                            </cell>
+                            <cell id="67">
+                                <label id="69">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="textAlign">right</property>
+                                    <expression name="bookmark">"DomVal"</expression>
+                                    <text-property name="text">750,000</text-property>
+                                </label>
+                            </cell>
+                            <cell id="72">
+                                <image id="78">
+                                    <expression name="bookmark">"DomDelX"</expression>
+                                    <property name="source">embed</property>
+                                    <property name="imageName">deleteX.jpg</property>
+                                    <list-property name="action">
+                                        <structure>
+                                            <property name="linkType">none</property>
+                                        </structure>
+                                    </list-property>
+                                </image>
+                            </cell>
+                        </row>
+                    </grid>
+                </cell>
+            </row>
+            <row id="79">
+                <cell id="80">
+                    <text id="54">
+                        <property name="textAlign">right</property>
+                        <expression name="bookmark">"Tra"</expression>
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<input type="button" value="Transact" style="font-size: 8pt; font-family: Arial; width: 50px; height: 20px"/>]]></text-property>
+                    </text>
+                    <text id="55">
+                        <property name="contentType">html</property>
+                        <text-property name="content"><![CDATA[<script>
+hideAll();
+</script>
+<!---  <input type="button" value="TestRev" style="font-size: 8pt; font-family: Arial; width: 50px; height: 20px" onclick="runit('Revolving LOC',300000)"/>
+<!--- <input type="button" value="TestDom" style="font-size: 8pt; font-family: Arial; width: 50px; height: 20px" onclick="runit('Domestic Index Fund #1',750000)"/>]]></text-property>
+                    </text>
+                </cell>
+            </row>
+        </grid>
+    </body>
+    <list-property name="images">
+        <structure>
+            <property name="name">deleteX.jpg</property>
+            <property name="data">
+                /9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAPAAA/+4AJkFkb2JlAGTAAAAAAQMAFQQD
+                BgoNAAABxwAAAhsAAAKBAAAC6//bAIQABgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQ
+                DA4PEA8ODBMTFBQTExwbGxscHx8fHx8fHx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8f
+                Hx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f/8IAEQgACwAMAwERAAIRAQMRAf/EAKIAAQEB
+                AAAAAAAAAAAAAAAAAAMABgEBAQEBAAAAAAAAAAAAAAAAAAIDBBAAAQMFAAAAAAAAAAAAAAAAABAgIQIS
+                IxQkEQACAgECBQUAAAAAAAAAAAABEQITEgAx8CFRMgNxoUKSYxIAAQQDAAAAAAAAAAAAAAAAACBBUYFh
+                ocETAAAGAQMFAQEAAAAAAAAAAADwAREhMUFRYXGBkaHB0bHx/9oADAMBAAIRAxEAAAHYZd7Ig1f/2gAI
+                AQEAAQUCLclOsc5//9oACAECAAEFAmf/2gAIAQMAAQUCSST/2gAIAQICBj8CR//aAAgBAwIGPwIro2is
+                Sf/aAAgBAQEGPwKRMpFymzn5AIAeQgEopLjcirOeF675NUZJt76k7XnN1349x6cvXXyxu/ax1fZ+y1//
+                2gAIAQEDAT8ht9IPg7ThQkVoA450GG7OJu/jYs2yHcULw3lH/9oACAECAwE/IR99BGLiC4//2gAIAQMD
+                AT8h7Ywkwm1nRFeHh9ibAviS50WBKejex//aAAwDAQACEQMRAAAQCE//2gAIAQEDAT8QdVwdZELwlhDP
+                Inp6TaxUcfVEI3PsqAXPlQP/2gAIAQIDAT8QTnK5WJJppaepQ5LWi6j25Ueg/9oACAEDAwE/EKZESmTJ
+                ZURVdLm9QdPZwPczNUUIEaHaDWf0wvhz39B//9k=
+</property>
+        </structure>
+    </list-property>
+</report>
