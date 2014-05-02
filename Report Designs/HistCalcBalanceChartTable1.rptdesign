@@ -665,14 +665,14 @@ function simulate() {
                                 </cell>
                                 <cell id="54">
                                     <data id="55">
-                                        <property name="fontSize">9pt</property>
+                                        <property name="fontSize">8pt</property>
                                         <property name="paddingTop">1pt</property>
                                         <property name="resultSetColumn">Cat1</property>
                                     </data>
                                 </cell>
                                 <cell id="56">
                                     <data id="57">
-                                        <property name="fontSize">9pt</property>
+                                        <property name="fontSize">8pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0</property>
@@ -682,7 +682,7 @@ function simulate() {
                                 </cell>
                                 <cell id="58">
                                     <data id="59">
-                                        <property name="fontSize">9pt</property>
+                                        <property name="fontSize">8pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Fixed</property>
                                             <property name="pattern">Fixed</property>

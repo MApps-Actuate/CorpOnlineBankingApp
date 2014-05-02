@@ -1050,14 +1050,14 @@ hideElement("js3_sim300k");
                                 </cell>
                                 <cell id="54">
                                     <data id="55">
-                                        <property name="fontSize">9pt</property>
+                                        <property name="fontSize">8pt</property>
                                         <property name="paddingTop">1pt</property>
                                         <property name="resultSetColumn">Cat1</property>
                                     </data>
                                 </cell>
                                 <cell id="56">
                                     <data id="57">
-                                        <property name="fontSize">9pt</property>
+                                        <property name="fontSize">8pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0</property>
@@ -1067,7 +1067,7 @@ hideElement("js3_sim300k");
                                 </cell>
                                 <cell id="58">
                                     <data id="59">
-                                        <property name="fontSize">9pt</property>
+                                        <property name="fontSize">8pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Fixed</property>
                                             <property name="pattern">Fixed</property>
@@ -1077,7 +1077,7 @@ hideElement("js3_sim300k");
                                 </cell>
                                 <cell id="60">
                                     <data id="61">
-                                        <property name="fontSize">9pt</property>
+                                        <property name="fontSize">8pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0</property>
@@ -1119,7 +1119,7 @@ hideElement("js3_sim300k");
                     <text id="90">
                         <property name="contentType">html</property>
                         <text-property name="content"><![CDATA[<script>
-//hideImage("sim300k");
+hideImage("sim300k");
 </script>]]></text-property>
                     </text>
                 </cell>

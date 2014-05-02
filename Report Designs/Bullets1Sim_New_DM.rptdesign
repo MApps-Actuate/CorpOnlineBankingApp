@@ -2416,10 +2416,7 @@ else {
                                     <property name="textAlign">left</property>
                                     <data id="187">
                                         <property name="fontFamily">"Verdana"</property>
-                                        <property name="fontSize">9pt</property>
                                         <property name="fontWeight">bold</property>
-                                        <property name="color">gray</property>
-                                        <property name="paddingTop">3pt</property>
                                         <property name="resultSetColumn">Name</property>
                                     </data>
                                 </cell>
@@ -2450,7 +2447,7 @@ else {
                                     <property name="textAlign">left</property>
                                     <extended-item extensionName="FlashGadgets" id="188">
                                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="1.0">
- <Gadget backgroundColor="FEFEFE" borderColor="000000" borderThickness="2" borderTransparency="255" colorScheme="3" prefix="" scripts="function beforeRendering( gadget, fgsc )&#13;&#10;{&#13;&#10;var theCounter = parseInt(fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theOtherCounter1&quot;));&#13;&#10;&#13;&#10;gblArray = fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theArray&quot;);&#13;&#10;&#13;&#10; //CW - Commented this out because it looks better with text control above bullet chart&#13;&#10; //gadget.setTitle(gblArray.get(theCounter).get(&quot;Name&quot;));&#13;&#10; &#13;&#10; gadget.getThresholds().get(0).setStartValue(gblArray.get(theCounter).get(&quot;Target&quot;)); &#13;&#10;&#13;&#10; gadget.getRegion().get(0).setStartValue(gblArray.get(theCounter).get(&quot;LowerLimit&quot;));&#13;&#10; gadget.getRegion().get(0).setEndValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setStartValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setEndValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setStartValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setEndValue(gblArray.get(theCounter).get(&quot;UpperLimit&quot;));&#13;&#10;&#13;&#10;theCounter++;&#13;&#10;fgsc.getExternalContext().getScriptable().setPersistentGlobalVariable (&quot;theOtherCounter1&quot;, theCounter.toString());&#13;&#10;}&#13;&#10;&#13;&#10;" showBorder="false" showGaugeLabels="false" showGlassStyle="true" showShadow="false" showValueAboveNeedle="false" subTitle="" subType="HBullet" suffix="" title="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Bullet" version="1.0.0" zOrderPosition="0">
+ <Gadget backgroundColor="FEFEFE" borderColor="000000" borderThickness="2" borderTransparency="255" colorScheme="3" prefix="" scripts="function beforeRendering( gadget, fgsc )&#13;&#10;{&#13;&#10;var theCounter = parseInt(fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theOtherCounter1&quot;));&#13;&#10;&#13;&#10;gblArray = fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theArray&quot;);&#13;&#10;&#13;&#10; //CW - Commented this out because it looks better with text control above bullet chart&#13;&#10;// gadget.setTitle(gblArray.get(theCounter).get(&quot;Name&quot;));&#13;&#10; &#13;&#10; gadget.getThresholds().get(0).setStartValue(gblArray.get(theCounter).get(&quot;Target&quot;)); &#13;&#10;&#13;&#10; gadget.getRegion().get(0).setStartValue(gblArray.get(theCounter).get(&quot;LowerLimit&quot;));&#13;&#10; gadget.getRegion().get(0).setEndValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setStartValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setEndValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setStartValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setEndValue(gblArray.get(theCounter).get(&quot;UpperLimit&quot;));&#13;&#10;&#13;&#10;theCounter++;&#13;&#10;fgsc.getExternalContext().getScriptable().setPersistentGlobalVariable (&quot;theOtherCounter1&quot;, theCounter.toString());&#13;&#10;}&#13;&#10;&#13;&#10;" showBorder="false" showGaugeLabels="false" showGlassStyle="true" showShadow="false" showValueAboveNeedle="false" subTitle="" subType="HBullet" suffix="" title="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Bullet" version="1.0.0" zOrderPosition="0">
   <gadgetPartsSupportingEffects _body="background"/>
   <gadgetPartsSupportingEffects _body="caption"/>
   <gadgetPartsSupportingEffects _body="subcaption"/>
@@ -2466,7 +2463,7 @@ else {
   <region color="66b0d1" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
   <region color="93cc4c" endValue="100.0" label="C" startValue="70.0" transparency="255"/>
   <thresholds color="99ccff" isDashed="false" isTrendZone="false" length="50" lineWidth="4" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
-  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="false" ticksOnRight="false">
+  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
    <major color="b7b7b7" height="4" width="1"/>
    <minor color="b7b7b7" height="2" width="1"/>
   </ticks>
@@ -2479,14 +2476,14 @@ else {
    <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" showBorder="true" transparency="255" width="32"/>
    <bulletPlot borderTransparency="255" borderWidth="2" showAsDot="false" showBorder="false" showShadow="false" showValueLabel="true"/>
   </bullet>
-  <font color="555555" font="Verdana" size="10"/>
+  <font color="555555" font="Tahoma" size="10"/>
   <paddingMargins/>
  </Gadget>
 </ActuateChart>
 ]]></xml-property>
                                         <property name="inheritColumns">false</property>
                                         <property name="outputFormat">JS</property>
-                                        <property name="height">0.75in</property>
+                                        <property name="height">0.8958333333333334in</property>
                                         <property name="width">5.75in</property>
                                     </extended-item>
                                 </cell>
@@ -2499,7 +2496,7 @@ else {
                 <cell id="191">
                     <grid id="192">
                         <property name="backgroundColor">#FFFFFF</property>
-                        <property name="width">5.8in</property>
+                        <property name="width">5.5in</property>
                         <column id="193">
                             <property name="width">1.6in</property>
                         </column>
@@ -2512,10 +2509,9 @@ else {
                             <cell id="197">
                                 <label id="198">
                                     <property name="fontFamily">"Verdana"</property>
-                                    <property name="fontSize">9pt</property>
+                                    <property name="fontSize">8pt</property>
                                     <property name="fontWeight">bold</property>
                                     <property name="fontStyle">italic</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <text-property name="text">Simulations</text-property>
                                 </label>
@@ -2525,30 +2521,64 @@ else {
                         </row>
                         <row id="201">
                             <cell id="202">
-                                <label id="312">
+                                <label id="203">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <text-property name="text">Revolving LOC:</text-property>
                                 </label>
                             </cell>
-                            <cell id="204"/>
-                            <cell id="206"/>
+                            <cell id="204">
+                                <label id="205">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="textAlign">right</property>
+                                    <text-property name="text">300,000</text-property>
+                                </label>
+                            </cell>
+                            <cell id="206">
+                                <image id="207">
+                                    <property name="source">embed</property>
+                                    <property name="imageName">deleteX.jpg</property>
+                                    <list-property name="action">
+                                        <structure>
+                                            <property name="linkType">none</property>
+                                        </structure>
+                                    </list-property>
+                                </image>
+                            </cell>
                         </row>
                         <row id="208">
                             <cell id="209">
-                                <label id="313">
+                                <label id="210">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <expression name="bookmark">"Dom"</expression>
                                     <text-property name="text">Domestic Index Fund #1:</text-property>
                                 </label>
                             </cell>
-                            <cell id="211"/>
-                            <cell id="213"/>
+                            <cell id="211">
+                                <label id="212">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">8pt</property>
+                                    <property name="textAlign">right</property>
+                                    <expression name="bookmark">"DomVal"</expression>
+                                    <text-property name="text">750,000</text-property>
+                                </label>
+                            </cell>
+                            <cell id="213">
+                                <image id="214">
+                                    <expression name="bookmark">"DomDelX"</expression>
+                                    <property name="source">embed</property>
+                                    <property name="imageName">deleteX.jpg</property>
+                                    <list-property name="action">
+                                        <structure>
+                                            <property name="linkType">none</property>
+                                        </structure>
+                                    </list-property>
+                                </image>
+                            </cell>
                         </row>
                     </grid>
                 </cell>
@@ -2655,10 +2685,7 @@ else {
                                     <property name="textAlign">left</property>
                                     <data id="113">
                                         <property name="fontFamily">"Verdana"</property>
-                                        <property name="fontSize">9pt</property>
                                         <property name="fontWeight">bold</property>
-                                        <property name="color">gray</property>
-                                        <property name="paddingTop">3pt</property>
                                         <property name="resultSetColumn">Name</property>
                                     </data>
                                 </cell>
@@ -2689,7 +2716,7 @@ else {
                                     <property name="textAlign">left</property>
                                     <extended-item extensionName="FlashGadgets" id="218">
                                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="1.0">
- <Gadget backgroundColor="FEFEFE" borderColor="000000" borderThickness="2" borderTransparency="255" colorScheme="3" prefix="" scripts="function beforeRendering( gadget, fgsc )&#13;&#10;{&#13;&#10;var theCounter = parseInt(fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theOtherCounter1&quot;));&#13;&#10;&#13;&#10;gblArray = fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theArray&quot;);&#13;&#10;&#13;&#10; //CW - Commented this out because it looks better with text control above bullet chart&#13;&#10;//gadget.setTitle(gblArray.get(theCounter).get(&quot;Name&quot;));&#13;&#10; &#13;&#10; gadget.getThresholds().get(0).setStartValue(gblArray.get(theCounter).get(&quot;Target&quot;)); &#13;&#10;&#13;&#10; gadget.getRegion().get(0).setStartValue(gblArray.get(theCounter).get(&quot;LowerLimit&quot;));&#13;&#10; gadget.getRegion().get(0).setEndValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setStartValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setEndValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setStartValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setEndValue(gblArray.get(theCounter).get(&quot;UpperLimit&quot;));&#13;&#10;&#13;&#10;theCounter++;&#13;&#10;fgsc.getExternalContext().getScriptable().setPersistentGlobalVariable (&quot;theOtherCounter1&quot;, theCounter.toString());&#13;&#10;}&#13;&#10;&#13;&#10;" showBorder="false" showGaugeLabels="false" showGlassStyle="true" showShadow="false" showValueAboveNeedle="false" subTitle="" subType="HBullet" suffix="" title="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Bullet" version="1.0.0" zOrderPosition="0">
+ <Gadget backgroundColor="FEFEFE" borderColor="000000" borderThickness="2" borderTransparency="255" colorScheme="3" prefix="" scripts="function beforeRendering( gadget, fgsc )&#13;&#10;{&#13;&#10;var theCounter = parseInt(fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theOtherCounter1&quot;));&#13;&#10;&#13;&#10;gblArray = fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theArray&quot;);&#13;&#10;&#13;&#10; //CW - Commented this out because it looks better with text control above bullet chart&#13;&#10;// gadget.setTitle(gblArray.get(theCounter).get(&quot;Name&quot;));&#13;&#10; &#13;&#10; gadget.getThresholds().get(0).setStartValue(gblArray.get(theCounter).get(&quot;Target&quot;)); &#13;&#10; &#13;&#10; gadget.getRegion().get(0).setStartValue(gblArray.get(theCounter).get(&quot;LowerLimit&quot;));&#13;&#10; gadget.getRegion().get(0).setEndValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setStartValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setEndValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setStartValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setEndValue(gblArray.get(theCounter).get(&quot;UpperLimit&quot;));&#13;&#10; chart.backgroundColor=&quot;c1c1c1&quot;;&#13;&#10; &#13;&#10;theCounter++;&#13;&#10;fgsc.getExternalContext().getScriptable().setPersistentGlobalVariable (&quot;theOtherCounter1&quot;, theCounter.toString());&#13;&#10;}&#13;&#10;&#13;&#10;" showBorder="false" showGaugeLabels="false" showGlassStyle="true" showShadow="false" showValueAboveNeedle="false" subTitle="" subType="HBullet" suffix="" title="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Bullet" version="1.0.0" zOrderPosition="0">
   <gadgetPartsSupportingEffects _body="background"/>
   <gadgetPartsSupportingEffects _body="caption"/>
   <gadgetPartsSupportingEffects _body="subcaption"/>
@@ -2705,7 +2732,7 @@ else {
   <region color="66b0d1" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
   <region color="93cc4c" endValue="100.0" label="C" startValue="70.0" transparency="255"/>
   <thresholds color="99ccff" isDashed="false" isTrendZone="false" length="50" lineWidth="4" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
-  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="false" ticksOnRight="false">
+  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
    <major color="b7b7b7" height="4" width="1"/>
    <minor color="b7b7b7" height="2" width="1"/>
   </ticks>
@@ -2718,14 +2745,14 @@ else {
    <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" showBorder="true" transparency="255" width="32"/>
    <bulletPlot borderTransparency="255" borderWidth="2" showAsDot="false" showBorder="false" showShadow="false" showValueLabel="true"/>
   </bullet>
-  <font color="555555" font="Verdana" size="10"/>
+  <font color="555555" font="Tahoma" size="10"/>
   <paddingMargins/>
  </Gadget>
 </ActuateChart>
 ]]></xml-property>
                                         <property name="inheritColumns">false</property>
                                         <property name="outputFormat">JS</property>
-                                        <property name="height">0.75in</property>
+                                        <property name="height">0.8958333333333334in</property>
                                         <property name="width">5.75in</property>
                                     </extended-item>
                                 </cell>
@@ -2738,7 +2765,7 @@ else {
                 <cell id="176">
                     <grid id="121">
                         <property name="backgroundColor">#FFCD9A</property>
-                        <property name="width">5.8in</property>
+                        <property name="width">5.5in</property>
                         <column id="122">
                             <property name="width">1.6in</property>
                         </column>
@@ -2751,10 +2778,9 @@ else {
                             <cell id="126">
                                 <label id="127">
                                     <property name="fontFamily">"Verdana"</property>
-                                    <property name="fontSize">9pt</property>
+                                    <property name="fontSize">8pt</property>
                                     <property name="fontWeight">bold</property>
                                     <property name="fontStyle">italic</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <text-property name="text">Simulations</text-property>
                                 </label>
@@ -2767,7 +2793,6 @@ else {
                                 <label id="132">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <text-property name="text">Revolving LOC:</text-property>
                                 </label>
@@ -2776,7 +2801,6 @@ else {
                                 <label id="134">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">right</property>
                                     <text-property name="text">300,000</text-property>
                                 </label>
@@ -2799,7 +2823,6 @@ else {
                                 <label id="139">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <expression name="bookmark">"Dom"</expression>
                                     <text-property name="text">Domestic Index Fund #1:</text-property>
@@ -2809,7 +2832,6 @@ else {
                                 <label id="141">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">right</property>
                                     <expression name="bookmark">"DomVal"</expression>
                                     <text-property name="text">750,000</text-property>
@@ -2856,7 +2878,7 @@ else {
             <row id="274">
                 <cell id="275">
                     <table id="276">
-                        <property name="dataSet">DIF</property>
+                        <property name="dataSet">Bullets1</property>
                         <list-property name="boundDataColumns">
                             <structure>
                                 <property name="name">Name</property>
@@ -2928,15 +2950,11 @@ else {
 
 }]]></method>
                                 <cell id="278">
-                                    <property name="paddingTop">3pt</property>
                                     <property name="paddingBottom">1pt</property>
                                     <property name="textAlign">left</property>
                                     <data id="279">
                                         <property name="fontFamily">"Verdana"</property>
-                                        <property name="fontSize">9pt</property>
                                         <property name="fontWeight">bold</property>
-                                        <property name="color">gray</property>
-                                        <property name="paddingTop">3pt</property>
                                         <property name="resultSetColumn">Name</property>
                                     </data>
                                 </cell>
@@ -2967,7 +2985,7 @@ else {
                                     <property name="textAlign">left</property>
                                     <extended-item extensionName="FlashGadgets" id="282">
                                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="1.0">
- <Gadget backgroundColor="FEFEFE" borderColor="000000" borderThickness="2" borderTransparency="255" colorScheme="3" prefix="" scripts="function beforeRendering( gadget, fgsc )&#13;&#10;{&#13;&#10;var theCounter = parseInt(fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theOtherCounter1&quot;));&#13;&#10;&#13;&#10;gblArray = fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theArray&quot;);&#13;&#10;&#13;&#10; //CW - Commented this out because it looks better with text control above bullet chart&#13;&#10;//gadget.setTitle(gblArray.get(theCounter).get(&quot;Name&quot;));&#13;&#10; &#13;&#10; gadget.getThresholds().get(0).setStartValue(gblArray.get(theCounter).get(&quot;Target&quot;)); &#13;&#10;&#13;&#10; gadget.getRegion().get(0).setStartValue(gblArray.get(theCounter).get(&quot;LowerLimit&quot;));&#13;&#10; gadget.getRegion().get(0).setEndValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setStartValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setEndValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setStartValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setEndValue(gblArray.get(theCounter).get(&quot;UpperLimit&quot;));&#13;&#10;&#13;&#10;theCounter++;&#13;&#10;fgsc.getExternalContext().getScriptable().setPersistentGlobalVariable (&quot;theOtherCounter1&quot;, theCounter.toString());&#13;&#10;}&#13;&#10;&#13;&#10;" showBorder="false" showGaugeLabels="false" showGlassStyle="true" showShadow="false" showValueAboveNeedle="false" subTitle="" subType="HBullet" suffix="" title="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Bullet" version="1.0.0" zOrderPosition="0">
+ <Gadget backgroundColor="FEFEFE" borderColor="000000" borderThickness="2" borderTransparency="255" colorScheme="3" prefix="" scripts="function beforeRendering( gadget, fgsc )&#13;&#10;{&#13;&#10;var theCounter = parseInt(fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theOtherCounter1&quot;));&#13;&#10;&#13;&#10;gblArray = fgsc.getExternalContext().getScriptable().getPersistentGlobalVariable (&quot;theArray&quot;);&#13;&#10;&#13;&#10; //CW - Commented this out because it looks better with text control above bullet chart&#13;&#10;// gadget.setTitle(gblArray.get(theCounter).get(&quot;Name&quot;));&#13;&#10; &#13;&#10; gadget.getThresholds().get(0).setStartValue(gblArray.get(theCounter).get(&quot;Target&quot;)); &#13;&#10;&#13;&#10; gadget.getRegion().get(0).setStartValue(gblArray.get(theCounter).get(&quot;LowerLimit&quot;));&#13;&#10; gadget.getRegion().get(0).setEndValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setStartValue(gblArray.get(theCounter).get(&quot;Threshold1&quot;));&#13;&#10; gadget.getRegion().get(1).setEndValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setStartValue(gblArray.get(theCounter).get(&quot;Threshold2&quot;));&#13;&#10; gadget.getRegion().get(2).setEndValue(gblArray.get(theCounter).get(&quot;UpperLimit&quot;));&#13;&#10;&#13;&#10;theCounter++;&#13;&#10;fgsc.getExternalContext().getScriptable().setPersistentGlobalVariable (&quot;theOtherCounter1&quot;, theCounter.toString());&#13;&#10;}&#13;&#10;&#13;&#10;" showBorder="false" showGaugeLabels="false" showGlassStyle="true" showShadow="false" showValueAboveNeedle="false" subTitle="" subType="HBullet" suffix="" title="" turnOffAnimation="false" turnOffDefaultAnimination="false" type="Bullet" version="1.0.0" zOrderPosition="0">
   <gadgetPartsSupportingEffects _body="background"/>
   <gadgetPartsSupportingEffects _body="caption"/>
   <gadgetPartsSupportingEffects _body="subcaption"/>
@@ -2983,7 +3001,7 @@ else {
   <region color="66b0d1" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
   <region color="93cc4c" endValue="100.0" label="C" startValue="70.0" transparency="255"/>
   <thresholds color="99ccff" isDashed="false" isTrendZone="false" length="50" lineWidth="4" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
-  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="false" ticksOnRight="false">
+  <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
    <major color="b7b7b7" height="4" width="1"/>
    <minor color="b7b7b7" height="2" width="1"/>
   </ticks>
@@ -2996,14 +3014,14 @@ else {
    <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" showBorder="true" transparency="255" width="32"/>
    <bulletPlot borderTransparency="255" borderWidth="2" showAsDot="false" showBorder="false" showShadow="false" showValueLabel="true"/>
   </bullet>
-  <font color="555555" font="Verdana" size="10"/>
+  <font color="555555" font="Tahoma" size="10"/>
   <paddingMargins/>
  </Gadget>
 </ActuateChart>
 ]]></xml-property>
                                         <property name="inheritColumns">false</property>
                                         <property name="outputFormat">JS</property>
-                                        <property name="height">0.75in</property>
+                                        <property name="height">0.8958333333333334in</property>
                                         <property name="width">5.75in</property>
                                     </extended-item>
                                 </cell>
@@ -3016,7 +3034,7 @@ else {
                 <cell id="285">
                     <grid id="286">
                         <property name="backgroundColor">#FFCD9A</property>
-                        <property name="width">5.8in</property>
+                        <property name="width">5.5in</property>
                         <column id="287">
                             <property name="width">1.6in</property>
                         </column>
@@ -3029,10 +3047,9 @@ else {
                             <cell id="291">
                                 <label id="292">
                                     <property name="fontFamily">"Verdana"</property>
-                                    <property name="fontSize">9pt</property>
+                                    <property name="fontSize">8pt</property>
                                     <property name="fontWeight">bold</property>
                                     <property name="fontStyle">italic</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <text-property name="text">Simulations</text-property>
                                 </label>
@@ -3045,7 +3062,6 @@ else {
                                 <label id="297">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <text-property name="text">Revolving LOC:</text-property>
                                 </label>
@@ -3054,7 +3070,6 @@ else {
                                 <label id="299">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">right</property>
                                     <text-property name="text">300,000</text-property>
                                 </label>
@@ -3076,7 +3091,6 @@ else {
                                 <label id="304">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">left</property>
                                     <expression name="bookmark">"Dom"</expression>
                                     <text-property name="text">Domestic Index Fund #1:</text-property>
@@ -3086,7 +3100,6 @@ else {
                                 <label id="306">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
                                     <property name="textAlign">right</property>
                                     <expression name="bookmark">"DomVal"</expression>
                                     <text-property name="text">750,000</text-property>

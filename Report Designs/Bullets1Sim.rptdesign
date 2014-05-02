@@ -2077,7 +2077,7 @@ function simulate() {
             <property name="marginBottom">0pt</property>
             <property name="textAlign">center</property>
             <property name="verticalAlign">top</property>
-            <property name="width">3.8958333333in</property>
+            <property name="width">3.7in</property>
             <expression name="bookmark">"table"</expression>
             <column id="43">
                 <property name="width">3.8958333333in</property>
