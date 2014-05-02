@@ -1154,7 +1154,7 @@
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side">
   <block>
-   <children _type="TitleBlock" visible="true">
+   <children _type="TitleBlock" visible="false">
     <outline>
      <color _nil="1"/>
     </outline>
@@ -1336,7 +1336,7 @@
 ]]></xml-property>
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">false</property>
-                        <property name="height">2.125in</property>
+                        <property name="height">3in</property>
                         <property name="width">3.646in</property>
                         <property name="dataSet">BalanceChart1</property>
                         <list-property name="boundDataColumns">

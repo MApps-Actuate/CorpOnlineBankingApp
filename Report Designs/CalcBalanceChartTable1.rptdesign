@@ -367,40 +367,37 @@ else return false;]]></method>
             <property name="fontFamily">"Verdana"</property>
             <property name="color">gray</property>
             <property name="textAlign">center</property>
-            <property name="width">4in</property>
+            <property name="width">5in</property>
             <expression name="bookmark">"report"</expression>
             <column id="12"/>
             <row id="17">
                 <cell id="18">
                     <text id="89">
                         <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<span></span>
-<script>
-function hideImage(imageID) {
-	var elem = document.getElementById(imageID);
-	elem.style.display = "none";
+                        <text-property name="content"><![CDATA[<script>
+function hideElement(elementName) {
+   document.getElementById(elementName).style.display="none";
 }
-function showImage(imageID) {
-	var elem = document.getElementById(imageID);
-	elem.style.display = "block";
+
+function showElement(elementName) {
+//   document.getElementById("js3_sim300k").style.display="block";
+   document.getElementById("elementName").style.display="block";
 }
+
 function simulate() {
-	hideImage('nosim');
-	showImage('sim300k');
-	parent.WindowCallbacks.fireEvent('cashBalanceEvt','code',"runit('Revolving LOC',300000);");
-}
-</script>
-]]></text-property>
+ document.getElementById("js3_nosim").style.display="none";
+ document.getElementById("js3_sim300k").style.display="block";
+//hideElement("js3_nosim");
+//showElement("js3_sim300k")
+ publishSetBullet("2");
+   }
+
+hideElement("js3_sim300k");  
+</script>	
+	
+
+    ]]></text-property>
                     </text>
-                    <label id="10">
-                        <property name="fontSize">10pt</property>
-                        <property name="fontWeight">bold</property>
-                        <property name="marginTop">0pt</property>
-                        <property name="paddingTop">1pt</property>
-                        <property name="paddingLeft">12pt</property>
-                        <property name="textAlign">left</property>
-                        <text-property name="text" key="ChartTitle">ChartTitle</text-property>
-                    </label>
                     <extended-item extensionName="Chart" name="NewChart" id="9">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Line Chart" subType="Stacked" dimension="0" units="Points" seriesThickness="10.0" orientation="1" unitSpacing="50.0">
@@ -637,8 +634,8 @@ function simulate() {
 ]]></xml-property>
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">true</property>
-                        <property name="height">1.2291666667in</property>
-                        <property name="width">3.875in</property>
+                        <property name="height">2in</property>
+                        <property name="width">4.875in</property>
                         <expression name="bookmark">"nosim"</expression>
                         <property name="dataSet">Data Set</property>
                         <list-property name="boundDataColumns">
@@ -897,8 +894,8 @@ function simulate() {
 ]]></xml-property>
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">true</property>
-                        <property name="height">1.2291666667in</property>
-                        <property name="width">3.875in</property>
+                        <property name="height">2in</property>
+                        <property name="width">4.875in</property>
                         <expression name="bookmark">"sim300k"</expression>
                         <property name="dataSet">Data Set-300k</property>
                         <list-property name="boundDataColumns">
@@ -975,29 +972,35 @@ function simulate() {
                         </column>
                         <header>
                             <row id="44">
+                                <property name="fontSize">9pt</property>
                                 <cell id="71"/>
                                 <cell id="45">
                                     <label id="46">
+                                        <property name="fontSize">9pt</property>
                                         <text-property name="text" key="Cat1Label">Cat1Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="47">
                                     <label id="48">
+                                        <property name="fontSize">9pt</property>
                                         <text-property name="text" key="Val1Label">Val1Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="49">
                                     <label id="50">
+                                        <property name="fontSize">9pt</property>
                                         <text-property name="text" key="Val2Label">Val2Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="51">
                                     <label id="52">
+                                        <property name="fontSize">9pt</property>
                                         <text-property name="text" key="Val3Label">Val3Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="76">
                                     <label id="80">
+                                        <property name="fontSize">9pt</property>
                                         <text-property name="text" key="SimAmtLabel">Sim Amt</text-property>
                                     </label>
                                 </cell>
@@ -1005,6 +1008,7 @@ function simulate() {
                         </header>
                         <detail>
                             <row id="53">
+                                <property name="fontSize">9pt</property>
                                 <cell id="72">
                                     <property name="borderBottomStyle">none</property>
                                     <property name="paddingTop">1pt</property>
@@ -1046,12 +1050,14 @@ function simulate() {
                                 </cell>
                                 <cell id="54">
                                     <data id="55">
+                                        <property name="fontSize">9pt</property>
                                         <property name="paddingTop">1pt</property>
                                         <property name="resultSetColumn">Cat1</property>
                                     </data>
                                 </cell>
                                 <cell id="56">
                                     <data id="57">
+                                        <property name="fontSize">9pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0</property>
@@ -1061,6 +1067,7 @@ function simulate() {
                                 </cell>
                                 <cell id="58">
                                     <data id="59">
+                                        <property name="fontSize">9pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Fixed</property>
                                             <property name="pattern">Fixed</property>
@@ -1070,6 +1077,7 @@ function simulate() {
                                 </cell>
                                 <cell id="60">
                                     <data id="61">
+                                        <property name="fontSize">9pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0</property>
@@ -1079,14 +1087,16 @@ function simulate() {
                                 </cell>
                                 <cell id="77">
                                     <text id="81">
+                                        <property name="fontSize">10pt</property>
                                         <property name="contentType">html</property>
-                                        <text-property name="content"><![CDATA[<input id="odSimAmt<value-of>row.__rownum</value-of>" type="text" style="width: 45px; height: 10px; font-size: 8pt" onchange="javascript: this.style.backgroundColor = '#FFCD9A';"/>]]></text-property>
+                                        <text-property name="content"><![CDATA[<input id="odSimAmt<value-of>row.__rownum</value-of>" type="text" style="width: 50px; height: 14px; font-size: 11pt" onchange="javascript: this.style.backgroundColor = '#FFCD9A';"/>]]></text-property>
                                     </text>
                                 </cell>
                             </row>
                         </detail>
                         <footer>
                             <row id="62">
+                                <property name="fontSize">9pt</property>
                                 <cell id="73"/>
                                 <cell id="63"/>
                                 <cell id="64"/>
@@ -1096,6 +1106,7 @@ function simulate() {
                                 </cell>
                                 <cell id="78">
                                     <text id="82">
+                                        <property name="fontSize">9pt</property>
                                         <property name="paddingTop">1pt</property>
                                         <property name="textIndent">0em</property>
                                         <property name="contentType">html</property>
@@ -1108,7 +1119,7 @@ function simulate() {
                     <text id="90">
                         <property name="contentType">html</property>
                         <text-property name="content"><![CDATA[<script>
-hideImage("sim300k");
+//hideImage("sim300k");
 </script>]]></text-property>
                     </text>
                 </cell>
