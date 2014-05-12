@@ -1343,7 +1343,7 @@
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">false</property>
                         <property name="height">2.75in</property>
-                        <property name="width">3.7in</property>
+                        <property name="width">6.8in</property>
                         <property name="dataSet">BalanceChart1</property>
                         <list-property name="boundDataColumns">
                             <structure>

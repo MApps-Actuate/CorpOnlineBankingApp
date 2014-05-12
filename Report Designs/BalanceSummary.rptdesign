@@ -1280,6 +1280,7 @@
             <property name="textAlign">center</property>
             <property name="width">4in</property>
             <property name="dataSet">BalanceSummary</property>
+            <property name="theme">ThemesReportItems3.Modern Table</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Cat1</property>
@@ -1362,6 +1363,8 @@
                         <property name="textAlign">center</property>
                         <label id="60">
                             <property name="style">NewStyle</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="color">white</property>
                             <property name="paddingLeft">5pt</property>
                             <property name="textAlign">left</property>
                             <text-property name="text" key="AllAccountsLink">AllAccountsLink</text-property>
@@ -1404,7 +1407,8 @@
                         <property name="borderTopStyle">solid</property>
                         <property name="borderTopWidth">thin</property>
                         <label id="37">
-                            <property name="color">gray</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="color">white</property>
                             <property name="paddingLeft">5pt</property>
                             <property name="textAlign">left</property>
                             <text-property name="text" key="Cat1Label">Cat1Label</text-property>
@@ -1424,7 +1428,8 @@
                         <property name="borderTopStyle">solid</property>
                         <property name="borderTopWidth">thin</property>
                         <label id="38">
-                            <property name="color">gray</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="color">white</property>
                             <text-property name="text" key="Val1Label">Val1Label</text-property>
                         </label>
                     </cell>
@@ -1443,7 +1448,8 @@
                         <property name="borderTopWidth">thin</property>
                         <property name="paddingRight">4pt</property>
                         <label id="39">
-                            <property name="color">gray</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="color">white</property>
                             <text-property name="text" key="Val2Label">Val2Label</text-property>
                         </label>
                     </cell>
@@ -1487,6 +1493,7 @@
                             <property name="paddingBottom">4pt</property>
                             <data id="31">
                                 <property name="style">NewStyle</property>
+                                <property name="fontSize">9pt</property>
                                 <property name="paddingLeft">5pt</property>
                                 <property name="textAlign">left</property>
                                 <property name="resultSetColumn">Cat1</property>
@@ -1515,6 +1522,7 @@
                             <property name="borderTopWidth">thin</property>
                             <property name="paddingBottom">4pt</property>
                             <data id="69">
+                                <property name="fontSize">9pt</property>
                                 <structure name="numberFormat">
                                     <property name="category">Currency</property>
                                     <property name="pattern">#,##0.00</property>
@@ -1532,6 +1540,7 @@
                             <property name="paddingBottom">4pt</property>
                             <property name="paddingRight">4pt</property>
                             <data id="70">
+                                <property name="fontSize">9pt</property>
                                 <structure name="numberFormat">
                                     <property name="category">Currency</property>
                                     <property name="pattern">#,##0.00</property>

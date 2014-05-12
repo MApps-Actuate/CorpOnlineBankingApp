@@ -260,7 +260,7 @@ else return false;]]></method>
             <property name="fontFamily">"Verdana"</property>
             <property name="color">gray</property>
             <property name="textAlign">center</property>
-            <property name="width">5in</property>
+            <property name="width">6.8%</property>
             <expression name="bookmark">"report"</expression>
             <column id="12"/>
             <row id="17">
@@ -523,7 +523,7 @@ function simulate() {
                         <property name="borderBottomStyle">none</property>
                         <property name="borderRightStyle">none</property>
                         <property name="height">1.2291666667in</property>
-                        <property name="width">4.875in</property>
+                        <property name="width">6.8in</property>
                         <property name="dataSet">Data Set</property>
                         <list-property name="boundDataColumns">
                             <structure>
@@ -578,6 +578,10 @@ function simulate() {
                             </structure>
                         </list-property>
                         <property name="pageBreakInterval">50</property>
+                        <column id="89">
+                            <property name="textAlign">left</property>
+                            <property name="width">15pt</property>
+                        </column>
                         <column id="74">
                             <property name="textAlign">left</property>
                             <property name="width">10pt</property>
@@ -596,28 +600,45 @@ function simulate() {
                         </column>
                         <header>
                             <row id="44">
-                                <cell id="71"/>
+                                <property name="fontSize">9pt</property>
+                                <property name="fontWeight">bold</property>
+                                <cell id="86">
+                                    <property name="paddingBottom">5pt</property>
+                                </cell>
+                                <cell id="71">
+                                    <property name="paddingBottom">5pt</property>
+                                </cell>
                                 <cell id="45">
                                     <label id="46">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingBottom">5pt</property>
                                         <text-property name="text" key="Cat1Label">Cat1Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="47">
                                     <label id="48">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingBottom">5pt</property>
                                         <text-property name="text" key="Val1Label">Val1Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="49">
                                     <label id="50">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingBottom">5pt</property>
                                         <text-property name="text" key="Val2Label">Val2Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="76">
                                     <label id="80">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="paddingRight">5pt</property>
+                                        <property name="textAlign">right</property>
                                         <text-property name="text" key="SimAmtLabel">Sim Amt</text-property>
                                     </label>
                                 </cell>
@@ -625,6 +646,12 @@ function simulate() {
                         </header>
                         <detail>
                             <row id="53">
+                                <cell id="87">
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="textIndent">0em</property>
+                                    <property name="verticalAlign">middle</property>
+                                </cell>
                                 <cell id="72">
                                     <property name="borderBottomStyle">none</property>
                                     <property name="paddingTop">1pt</property>
@@ -694,23 +721,24 @@ function simulate() {
                                     <text id="81">
                                         <property name="fontSize">10pt</property>
                                         <property name="contentType">html</property>
-                                        <text-property name="content"><![CDATA[<input id="afSimAmt<value-of>row.__rownum</value-of>" type="text" style="width: 45px; height: 10px; font-size: 9pt" onchange="javascript: this.style.backgroundColor = '#FFCD9A';"/>]]></text-property>
+                                        <text-property name="content"><![CDATA[<input id="afSimAmt<value-of>row.__rownum</value-of>" type="text" style="width: 65px; height: 18px; font-size: 9pt" onchange="javascript: this.style.backgroundColor = '#deeefa';"/>]]></text-property>
                                     </text>
                                 </cell>
                             </row>
                         </detail>
                         <footer>
                             <row id="62">
+                                <cell id="88"/>
                                 <cell id="73"/>
-                                <cell id="63"/>
-                                <cell id="64"/>
-                                <cell id="65"/>
-                                <cell id="78">
+                                <cell id="63">
+                                    <property name="colSpan">4</property>
+                                    <property name="rowSpan">1</property>
                                     <text id="82">
                                         <property name="paddingTop">1pt</property>
+                                        <property name="textAlign">center</property>
                                         <property name="textIndent">0em</property>
                                         <property name="contentType">html</property>
-                                        <text-property name="content"><![CDATA[<input type="button" value="Simulate" style="font-size: 8pt; font-family: Arial; width: 50px; height: 20px" onclick="javascript:simulate();"/>]]></text-property>
+                                        <text-property name="content"><![CDATA[<input type="button" value="Simulate" style="font-size: 8pt; font-family: Verdana; width: 65px; height: 20px" onclick="javascript:simulate();"/>]]></text-property>
                                     </text>
                                 </cell>
                             </row>

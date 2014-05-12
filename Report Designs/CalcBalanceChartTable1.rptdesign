@@ -367,7 +367,7 @@ else return false;]]></method>
             <property name="fontFamily">"Verdana"</property>
             <property name="color">gray</property>
             <property name="textAlign">center</property>
-            <property name="width">5in</property>
+            <property name="width">7in</property>
             <expression name="bookmark">"report"</expression>
             <column id="12"/>
             <row id="17">
@@ -398,265 +398,6 @@ hideElement("js3_sim300k");
 
     ]]></text-property>
                     </text>
-                    <extended-item extensionName="Chart" name="NewChart" id="9">
-                        <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
- <ChartWithAxes version="2.6.1" type="Line Chart" subType="Stacked" dimension="0" units="Points" seriesThickness="10.0" orientation="1" unitSpacing="50.0">
-  <description value="">
-   <font>
-    <alignment/>
-   </font>
-  </description>
-  <block row="-1" column="-1" rowspan="-1" columnspan="-1" visible="true">
-   <children _type="TitleBlock" anchor="0" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="false">
-    <bounds _body="0.0,0.0,0.0,0.0"/>
-    <insets _body="3.0,3.0,3.0,3.0"/>
-    <outline style="0" thickness="1" visible="false">
-     <color _body=",255,0,0,0"/>
-    </outline>
-    <label visible="true">
-     <caption value="ChartTitle">
-      <font name="Arial" size="10.0" bold="true">
-       <alignment _body="1,1"/>
-      </font>
-     </caption>
-     <background _body=",0,255,255,255"/>
-     <outline style="0" thickness="1">
-      <color _body=",255,0,0,0"/>
-     </outline>
-     <insets _body="0.0,2.0,0.0,3.0"/>
-    </label>
-   </children>
-   <children _type="Plot" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="true" horizontalSpacing="5" verticalSpacing="5">
-    <bounds _body="0.0,0.0,0.0,0.0"/>
-    <insets _body="3.0,3.0,3.0,3.0"/>
-    <outline style="0" thickness="1" visible="false">
-     <color _body=",255,0,0,0"/>
-    </outline>
-    <clientArea>
-     <outline style="0" thickness="0" visible="false">
-      <color _body=",255,0,0,0"/>
-     </outline>
-     <insets _body="0.0,0.0,0.0,0.0"/>
-    </clientArea>
-   </children>
-   <children _type="Legend" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="false" orientation="1" direction="1" position="3" itemType="0" titlePosition="0">
-    <bounds _body="0.0,0.0,0.0,0.0"/>
-    <insets _body="3.0,3.0,3.0,3.0"/>
-    <outline style="0" thickness="1" visible="false">
-     <color _body=",255,0,0,0"/>
-    </outline>
-    <clientArea>
-     <outline style="0" thickness="0" visible="false">
-      <color _body=",255,0,0,0"/>
-     </outline>
-     <insets _body="2.0,2.0,2.0,2.0"/>
-    </clientArea>
-    <text value=""/>
-    <separator style="0" thickness="1" visible="true">
-     <color _body=",255,0,0,0"/>
-    </separator>
-    <title visible="false">
-     <caption value=""/>
-     <background _body=",0,255,255,255"/>
-     <outline style="0" thickness="1" visible="false">
-      <color _body=",255,0,0,0"/>
-     </outline>
-     <insets _body="0.0,2.0,0.0,3.0"/>
-    </title>
-   </children>
-   <bounds _body="0.0,0.0,279.0,88.5000000024"/>
-   <insets _body="3.0,3.0,3.0,3.0"/>
-   <outline style="0" thickness="1" visible="false">
-    <color _body=",255,0,0,0"/>
-   </outline>
-  </block>
-  <extendedProperties name="keep.hierarchy.category" value="false"/>
-  <extendedProperties name="keep.hierarchy.series" value="false"/>
-  <extendedProperties name="jschart.series.shadow" value="true"/>
-  <extendedProperties name="jschart.zoom" value="xy"/>
-  <sampleData>
-   <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000"/>
-   <orthogonalSampleData dataSetRepresentation="5.0,4.0,12.0" seriesDefinitionIndex="0"/>
-  </sampleData>
-  <emptyMessage visible="false">
-   <caption value=""/>
-   <background _body=",0,255,255,255"/>
-   <outline style="0" thickness="1">
-    <color _body=",255,0,0,0"/>
-   </outline>
-   <insets _body="0.0,2.0,0.0,3.0"/>
-  </emptyMessage>
-  <axes type="3" titlePosition="1" orientation="0" labelPosition="1" staggered="false" primaryAxis="true" categoryAxis="false" percent="false">
-   <title visible="false">
-    <caption value="X-Axis Title">
-     <font size="14.0" bold="true">
-      <alignment _body="1,1"/>
-     </font>
-    </caption>
-    <background _body=",0,255,255,255"/>
-    <outline style="0" thickness="1">
-     <color _body=",255,0,0,0"/>
-    </outline>
-    <insets _body="0.0,2.0,0.0,3.0"/>
-   </title>
-   <associatedAxes type="0" titlePosition="2" orientation="1" labelPosition="2" primaryAxis="true" percent="false">
-    <title visible="false">
-     <caption value="Y-Axis Title">
-      <font size="14.0" bold="true" rotation="90.0">
-       <alignment _body="1,1"/>
-      </font>
-     </caption>
-     <background _body=",0,255,255,255"/>
-     <outline style="0" thickness="1">
-      <color _body=",255,0,0,0"/>
-     </outline>
-     <insets _body="0.0,2.0,0.0,3.0"/>
-    </title>
-    <seriesDefinitions sorting="0">
-     <query definition="row[&quot;Cat1&quot;]"/>
-     <series _type="LineSeries" visible="true" seriesIdentifier="" labelPosition="0" stacked="true" paletteLineColor="true" curve="false">
-      <label visible="false">
-       <caption value=""/>
-       <background _body=",0,255,255,255"/>
-       <outline style="0" thickness="1" visible="false">
-        <color _body=",255,0,0,0"/>
-       </outline>
-       <insets _body="0.0,2.0,0.0,3.0"/>
-      </label>
-      <dataDefinition definition="row[&quot;Val1&quot;]"/>
-      <dataPoint separator=", ">
-       <components type="1"/>
-      </dataPoint>
-      <curveFitting _nil="1"/>
-      <markers type="2" size="4" visible="false">
-       <outline visible="false"/>
-      </markers>
-      <lineAttributes style="0" thickness="2" visible="true">
-       <color _body=",255,0,0,0"/>
-      </lineAttributes>
-     </series>
-     <grouping groupingInterval="2.0"/>
-    </seriesDefinitions>
-    <lineAttributes style="0" thickness="1" visible="true">
-     <color _body=",255,192,192,192"/>
-    </lineAttributes>
-    <label visible="true">
-     <caption value="">
-      <font size="8.0"/>
-     </caption>
-     <background _body=",0,255,255,255"/>
-     <outline style="0" thickness="1">
-      <color _body=",255,0,0,0"/>
-     </outline>
-     <insets _body="0.0,2.0,0.0,3.0"/>
-    </label>
-    <formatSpecifier _type="JavaNumberFormatSpecifier" pattern="#,###,###" multiplier="1.0E-4"/>
-    <majorGrid tickStyle="4">
-     <lineAttributes style="0" thickness="1" visible="true">
-      <color _body=",255,196,196,196"/>
-     </lineAttributes>
-     <tickAttributes style="0" thickness="1" visible="false">
-      <color _body=",255,196,196,196"/>
-     </tickAttributes>
-    </majorGrid>
-    <minorGrid tickStyle="4">
-     <lineAttributes style="0" thickness="1" visible="false">
-      <color _body=",255,225,225,225"/>
-     </lineAttributes>
-     <tickAttributes style="0" thickness="1" visible="false">
-      <color _body=",255,225,225,225"/>
-     </tickAttributes>
-    </minorGrid>
-    <scale minorGridsPerUnit="5"/>
-    <origin type="0">
-     <value _type="NumberDataElement" value="0.0"/>
-    </origin>
-   </associatedAxes>
-   <seriesDefinitions sorting="0">
-    <query definition=""/>
-    <series visible="true" seriesIdentifier="" labelPosition="5" stacked="false">
-     <label visible="false">
-      <caption value=""/>
-      <background _body=",0,255,255,255"/>
-      <outline style="0" thickness="1" visible="false">
-       <color _body=",255,0,0,0"/>
-      </outline>
-      <insets _body="0.0,2.0,0.0,3.0"/>
-     </label>
-     <dataDefinition definition="row[&quot;Date1&quot;]"/>
-     <dataPoint separator=", ">
-      <components type="1"/>
-     </dataPoint>
-     <curveFitting _nil="1"/>
-    </series>
-    <grouping enabled="true" groupingUnit="7" groupType="1"/>
-   </seriesDefinitions>
-   <lineAttributes style="0" thickness="1" visible="true">
-    <color _body=",255,192,192,192"/>
-   </lineAttributes>
-   <label visible="true">
-    <caption value="">
-     <font size="8.0" rotation="0.0"/>
-    </caption>
-    <background _body=",0,255,255,255"/>
-    <outline style="0" thickness="1">
-     <color _body=",255,0,0,0"/>
-    </outline>
-    <insets _body="0.0,2.0,0.0,3.0"/>
-   </label>
-   <formatSpecifier _type="JavaDateFormatSpecifier" pattern="yyyy"/>
-   <majorGrid tickStyle="2">
-    <lineAttributes style="0" thickness="1" visible="false">
-     <color _body=",255,196,196,196"/>
-    </lineAttributes>
-    <tickAttributes style="0" thickness="1" visible="false">
-     <color _body=",255,196,196,196"/>
-    </tickAttributes>
-   </majorGrid>
-   <minorGrid tickStyle="4">
-    <lineAttributes style="0" thickness="1" visible="false">
-     <color _body=",255,225,225,225"/>
-    </lineAttributes>
-    <tickAttributes style="0" thickness="1" visible="false">
-     <color _body=",255,225,225,225"/>
-    </tickAttributes>
-   </minorGrid>
-   <scale step="2.0" unit="6" minorGridsPerUnit="5" showOutside="false"/>
-   <origin type="0">
-    <value _type="NumberDataElement" value="0.0"/>
-   </origin>
-  </axes>
-  <rotation>
-   <angles/>
-  </rotation>
- </ChartWithAxes>
-</ActuateChart>
-]]></xml-property>
-                        <property name="outputFormat">JS</property>
-                        <property name="inheritColumns">true</property>
-                        <property name="height">2in</property>
-                        <property name="width">4.875in</property>
-                        <expression name="bookmark">"nosim"</expression>
-                        <property name="dataSet">Data Set</property>
-                        <list-property name="boundDataColumns">
-                            <structure>
-                                <property name="name">Cat1</property>
-                                <expression name="expression">dataSetRow["Cat1"]</expression>
-                                <property name="dataType">string</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Date1</property>
-                                <expression name="expression">dataSetRow["Date1"]</expression>
-                                <property name="dataType">date-time</property>
-                            </structure>
-                            <structure>
-                                <property name="name">Val1</property>
-                                <expression name="expression">dataSetRow["Val1"]</expression>
-                                <property name="dataType">float</property>
-                            </structure>
-                        </list-property>
-                        <property name="theme">ThemesReportItems3.Modern</property>
-                    </extended-item>
                     <extended-item extensionName="Chart" name="NewChart1" id="86">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Line Chart" subType="Stacked" dimension="0" units="Points" seriesThickness="10.0" orientation="1" unitSpacing="50.0">
@@ -728,7 +469,7 @@ hideElement("js3_sim300k");
    <outline style="0" thickness="1" visible="false">
     <color _body=",255,0,0,0"/>
    </outline>
-   <background _body=",255,255,205,154"/>
+   <background _body=",255,222,238,250"/>
   </block>
   <extendedProperties name="keep.hierarchy.category" value="false"/>
   <extendedProperties name="keep.hierarchy.series" value="false"/>
@@ -895,9 +636,268 @@ hideElement("js3_sim300k");
                         <property name="outputFormat">JS</property>
                         <property name="inheritColumns">true</property>
                         <property name="height">2in</property>
-                        <property name="width">4.875in</property>
+                        <property name="width">6.8in</property>
                         <expression name="bookmark">"sim300k"</expression>
                         <property name="dataSet">Data Set-300k</property>
+                        <list-property name="boundDataColumns">
+                            <structure>
+                                <property name="name">Cat1</property>
+                                <expression name="expression">dataSetRow["Cat1"]</expression>
+                                <property name="dataType">string</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Date1</property>
+                                <expression name="expression">dataSetRow["Date1"]</expression>
+                                <property name="dataType">date-time</property>
+                            </structure>
+                            <structure>
+                                <property name="name">Val1</property>
+                                <expression name="expression">dataSetRow["Val1"]</expression>
+                                <property name="dataType">float</property>
+                            </structure>
+                        </list-property>
+                        <property name="theme">ThemesReportItems3.Modern</property>
+                    </extended-item>
+                    <extended-item extensionName="Chart" name="NewChart" id="9">
+                        <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Line Chart" subType="Stacked" dimension="0" units="Points" seriesThickness="10.0" orientation="1" unitSpacing="50.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block row="-1" column="-1" rowspan="-1" columnspan="-1" visible="true">
+   <children _type="TitleBlock" anchor="0" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="false">
+    <bounds _body="0.0,0.0,0.0,0.0"/>
+    <insets _body="3.0,3.0,3.0,3.0"/>
+    <outline style="0" thickness="1" visible="false">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <label visible="true">
+     <caption value="ChartTitle">
+      <font name="Verdana" size="10.0" bold="true">
+       <alignment _body="1,1"/>
+      </font>
+     </caption>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </label>
+   </children>
+   <children _type="Plot" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="true" horizontalSpacing="5" verticalSpacing="5">
+    <bounds _body="0.0,0.0,0.0,0.0"/>
+    <insets _body="3.0,3.0,3.0,3.0"/>
+    <outline style="0" thickness="1" visible="false">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <clientArea>
+     <outline style="0" thickness="0" visible="false">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,0.0,0.0,0.0"/>
+    </clientArea>
+   </children>
+   <children _type="Legend" row="-1" column="-1" rowspan="-1" columnspan="-1" visible="false" orientation="1" direction="1" position="3" itemType="0" titlePosition="0">
+    <bounds _body="0.0,0.0,0.0,0.0"/>
+    <insets _body="3.0,3.0,3.0,3.0"/>
+    <outline style="0" thickness="1" visible="false">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <clientArea>
+     <outline style="0" thickness="0" visible="false">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="2.0,2.0,2.0,2.0"/>
+    </clientArea>
+    <text value=""/>
+    <separator style="0" thickness="1" visible="true">
+     <color _body=",255,0,0,0"/>
+    </separator>
+    <title visible="false">
+     <caption value=""/>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1" visible="false">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,279.0,88.5000000024"/>
+   <insets _body="3.0,3.0,3.0,3.0"/>
+   <outline style="0" thickness="1" visible="false">
+    <color _body=",255,0,0,0"/>
+   </outline>
+  </block>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000"/>
+   <orthogonalSampleData dataSetRepresentation="5.0,4.0,12.0" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage visible="false">
+   <caption value=""/>
+   <background _body=",0,255,255,255"/>
+   <outline style="0" thickness="1">
+    <color _body=",255,0,0,0"/>
+   </outline>
+   <insets _body="0.0,2.0,0.0,3.0"/>
+  </emptyMessage>
+  <axes type="3" titlePosition="1" orientation="0" labelPosition="1" staggered="false" primaryAxis="true" categoryAxis="false" percent="false">
+   <title visible="false">
+    <caption value="X-Axis Title">
+     <font size="14.0" bold="true">
+      <alignment _body="1,1"/>
+     </font>
+    </caption>
+    <background _body=",0,255,255,255"/>
+    <outline style="0" thickness="1">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <insets _body="0.0,2.0,0.0,3.0"/>
+   </title>
+   <associatedAxes type="0" titlePosition="2" orientation="1" labelPosition="2" primaryAxis="true" percent="false">
+    <title visible="false">
+     <caption value="Y-Axis Title">
+      <font size="14.0" bold="true" rotation="90.0">
+       <alignment _body="1,1"/>
+      </font>
+     </caption>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </title>
+    <seriesDefinitions sorting="0">
+     <query definition="row[&quot;Cat1&quot;]"/>
+     <series _type="LineSeries" visible="true" seriesIdentifier="" labelPosition="0" stacked="true" paletteLineColor="true" curve="false">
+      <label visible="false">
+       <caption value=""/>
+       <background _body=",0,255,255,255"/>
+       <outline style="0" thickness="1" visible="false">
+        <color _body=",255,0,0,0"/>
+       </outline>
+       <insets _body="0.0,2.0,0.0,3.0"/>
+      </label>
+      <dataDefinition definition="row[&quot;Val1&quot;]"/>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="2" size="4" visible="false">
+       <outline visible="false"/>
+      </markers>
+      <lineAttributes style="0" thickness="2" visible="true">
+       <color _body=",255,0,0,0"/>
+      </lineAttributes>
+     </series>
+     <grouping groupingInterval="2.0"/>
+    </seriesDefinitions>
+    <lineAttributes style="0" thickness="1" visible="true">
+     <color _body=",255,192,192,192"/>
+    </lineAttributes>
+    <label visible="true">
+     <caption value="">
+      <font size="8.0"/>
+     </caption>
+     <background _body=",0,255,255,255"/>
+     <outline style="0" thickness="1">
+      <color _body=",255,0,0,0"/>
+     </outline>
+     <insets _body="0.0,2.0,0.0,3.0"/>
+    </label>
+    <formatSpecifier _type="JavaNumberFormatSpecifier" pattern="#,###,###" multiplier="1.0E-4"/>
+    <majorGrid tickStyle="4">
+     <lineAttributes style="0" thickness="1" visible="true">
+      <color _body=",255,196,196,196"/>
+     </lineAttributes>
+     <tickAttributes style="0" thickness="1" visible="false">
+      <color _body=",255,196,196,196"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid tickStyle="4">
+     <lineAttributes style="0" thickness="1" visible="false">
+      <color _body=",255,225,225,225"/>
+     </lineAttributes>
+     <tickAttributes style="0" thickness="1" visible="false">
+      <color _body=",255,225,225,225"/>
+     </tickAttributes>
+    </minorGrid>
+    <scale minorGridsPerUnit="5"/>
+    <origin type="0">
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions sorting="0">
+    <query definition=""/>
+    <series visible="true" seriesIdentifier="" labelPosition="5" stacked="false">
+     <label visible="false">
+      <caption value=""/>
+      <background _body=",0,255,255,255"/>
+      <outline style="0" thickness="1" visible="false">
+       <color _body=",255,0,0,0"/>
+      </outline>
+      <insets _body="0.0,2.0,0.0,3.0"/>
+     </label>
+     <dataDefinition definition="row[&quot;Date1&quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true" groupingUnit="7" groupType="1"/>
+   </seriesDefinitions>
+   <lineAttributes style="0" thickness="1" visible="true">
+    <color _body=",255,192,192,192"/>
+   </lineAttributes>
+   <label visible="true">
+    <caption value="">
+     <font size="8.0" rotation="0.0"/>
+    </caption>
+    <background _body=",0,255,255,255"/>
+    <outline style="0" thickness="1">
+     <color _body=",255,0,0,0"/>
+    </outline>
+    <insets _body="0.0,2.0,0.0,3.0"/>
+   </label>
+   <formatSpecifier _type="JavaDateFormatSpecifier" pattern="yyyy"/>
+   <majorGrid tickStyle="2">
+    <lineAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,196,196,196"/>
+    </lineAttributes>
+    <tickAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,196,196,196"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid tickStyle="4">
+    <lineAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,225,225,225"/>
+    </lineAttributes>
+    <tickAttributes style="0" thickness="1" visible="false">
+     <color _body=",255,225,225,225"/>
+    </tickAttributes>
+   </minorGrid>
+   <scale step="2.0" unit="6" minorGridsPerUnit="5" showOutside="false"/>
+   <origin type="0">
+    <value _type="NumberDataElement" value="0.0"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+                        <property name="outputFormat">JS</property>
+                        <property name="inheritColumns">true</property>
+                        <property name="height">2in</property>
+                        <property name="width">6.8in</property>
+                        <expression name="bookmark">"nosim"</expression>
+                        <property name="dataSet">Data Set</property>
                         <list-property name="boundDataColumns">
                             <structure>
                                 <property name="name">Cat1</property>
@@ -951,6 +951,10 @@ hideElement("js3_sim300k");
                             </structure>
                         </list-property>
                         <property name="pageBreakInterval">50</property>
+                        <column id="96">
+                            <property name="textAlign">left</property>
+                            <property name="width">15pt</property>
+                        </column>
                         <column id="74">
                             <property name="textAlign">left</property>
                             <property name="width">12pt</property>
@@ -973,34 +977,56 @@ hideElement("js3_sim300k");
                         <header>
                             <row id="44">
                                 <property name="fontSize">9pt</property>
+                                <property name="fontWeight">bold</property>
+                                <cell id="93"/>
                                 <cell id="71"/>
                                 <cell id="45">
                                     <label id="46">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Cat1Label">Cat1Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="47">
                                     <label id="48">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">right</property>
                                         <text-property name="text" key="Val1Label">Val1Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="49">
                                     <label id="50">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">right</property>
                                         <text-property name="text" key="Val2Label">Val2Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="51">
                                     <label id="52">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">right</property>
                                         <text-property name="text" key="Val3Label">Val3Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="76">
                                     <label id="80">
                                         <property name="fontSize">9pt</property>
+                                        <property name="fontWeight">bold</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="paddingRight">5pt</property>
                                         <text-property name="text" key="SimAmtLabel">Sim Amt</text-property>
                                     </label>
                                 </cell>
@@ -1008,7 +1034,13 @@ hideElement("js3_sim300k");
                         </header>
                         <detail>
                             <row id="53">
-                                <property name="fontSize">9pt</property>
+                                <property name="fontSize">8pt</property>
+                                <cell id="94">
+                                    <property name="borderBottomStyle">none</property>
+                                    <property name="paddingTop">1pt</property>
+                                    <property name="textIndent">0em</property>
+                                    <property name="verticalAlign">middle</property>
+                                </cell>
                                 <cell id="72">
                                     <property name="borderBottomStyle">none</property>
                                     <property name="paddingTop">1pt</property>
@@ -1051,6 +1083,7 @@ hideElement("js3_sim300k");
                                 <cell id="54">
                                     <data id="55">
                                         <property name="fontSize">8pt</property>
+                                        <property name="fontWeight">normal</property>
                                         <property name="paddingTop">1pt</property>
                                         <property name="resultSetColumn">Cat1</property>
                                     </data>
@@ -1087,9 +1120,9 @@ hideElement("js3_sim300k");
                                 </cell>
                                 <cell id="77">
                                     <text id="81">
-                                        <property name="fontSize">10pt</property>
+                                        <property name="fontSize">9pt</property>
                                         <property name="contentType">html</property>
-                                        <text-property name="content"><![CDATA[<input id="odSimAmt<value-of>row.__rownum</value-of>" type="text" style="width: 50px; height: 14px; font-size: 11pt" onchange="javascript: this.style.backgroundColor = '#FFCD9A';"/>]]></text-property>
+                                        <text-property name="content"><![CDATA[<input id="odSimAmt<value-of>row.__rownum</value-of>" type="text" style="width: 55px; height: 18px; font-size: 9pt; font-family:verdana" onchange="javascript: this.style.backgroundColor = '#deeefa';"/>]]></text-property>
                                     </text>
                                 </cell>
                             </row>
@@ -1097,20 +1130,18 @@ hideElement("js3_sim300k");
                         <footer>
                             <row id="62">
                                 <property name="fontSize">9pt</property>
+                                <cell id="95"/>
                                 <cell id="73"/>
-                                <cell id="63"/>
-                                <cell id="64"/>
-                                <cell id="65"/>
-                                <cell id="66">
-                                    <property name="paddingTop">1pt</property>
-                                </cell>
-                                <cell id="78">
+                                <cell id="63">
+                                    <property name="colSpan">5</property>
+                                    <property name="rowSpan">1</property>
                                     <text id="82">
                                         <property name="fontSize">9pt</property>
                                         <property name="paddingTop">1pt</property>
+                                        <property name="textAlign">center</property>
                                         <property name="textIndent">0em</property>
                                         <property name="contentType">html</property>
-                                        <text-property name="content"><![CDATA[<input type="button" value="Simulate" style="font-size: 8pt; font-family: Arial; width: 50px; height: 20px" onclick="javascript:simulate()"/>]]></text-property>
+                                        <text-property name="content"><![CDATA[<input type="button" value="Simulate" style="font-size: 8pt; font-family: Verdana; width: 65px; height: 20px" onclick="javascript:simulate()"/>]]></text-property>
                                     </text>
                                 </cell>
                             </row>
