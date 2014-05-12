@@ -553,7 +553,7 @@ function simulate() {
                         <property name="fontSize">8pt</property>
                         <property name="color">gray</property>
                         <property name="marginTop">5pt</property>
-                        <property name="width">100%</property>
+                        <property name="width">6.8in</property>
                         <property name="dataSet">Data Set1</property>
                         <list-property name="boundDataColumns">
                             <structure>
@@ -597,6 +597,10 @@ function simulate() {
                         </column>
                         <column id="79">
                             <property name="textAlign">right</property>
+                        </column>
+                        <column id="93">
+                            <property name="textAlign">right</property>
+                            <property name="width">12px</property>
                         </column>
                         <header>
                             <row id="44">
@@ -642,6 +646,7 @@ function simulate() {
                                         <text-property name="text" key="SimAmtLabel">Sim Amt</text-property>
                                     </label>
                                 </cell>
+                                <cell id="90"/>
                             </row>
                         </header>
                         <detail>
@@ -724,6 +729,7 @@ function simulate() {
                                         <text-property name="content"><![CDATA[<input id="afSimAmt<value-of>row.__rownum</value-of>" type="text" style="width: 65px; height: 18px; font-size: 9pt" onchange="javascript: this.style.backgroundColor = '#deeefa';"/>]]></text-property>
                                     </text>
                                 </cell>
+                                <cell id="91"/>
                             </row>
                         </detail>
                         <footer>
@@ -741,6 +747,7 @@ function simulate() {
                                         <text-property name="content"><![CDATA[<input type="button" value="Simulate" style="font-size: 8pt; font-family: Verdana; width: 65px; height: 20px" onclick="javascript:simulate();"/>]]></text-property>
                                     </text>
                                 </cell>
+                                <cell id="92"/>
                             </row>
                         </footer>
                     </table>

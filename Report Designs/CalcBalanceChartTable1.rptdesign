@@ -926,7 +926,7 @@ hideElement("js3_sim300k");
                         <property name="fontSize">8pt</property>
                         <property name="marginTop">5pt</property>
                         <property name="marginBottom">0pt</property>
-                        <property name="width">100%</property>
+                        <property name="width">6.8in</property>
                         <property name="dataSet">Data Set1</property>
                         <list-property name="boundDataColumns">
                             <structure>

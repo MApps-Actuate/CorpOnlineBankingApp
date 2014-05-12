@@ -47,7 +47,7 @@ function afterInit(){
 	config.setContentPanel(new actuate.viewer.BrowserPanel());
 	viewer = new actuate.Viewer("acviewer");
 	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/CalcBalanceChartTable1.rptdesign");
-	viewer.setWidth(728);
+	viewer.setWidth(690);
 	viewer.setHeight(375);
 	var uiOpts = new actuate.viewer.UIOptions();
 	uiOpts.enableToolBar(false);
