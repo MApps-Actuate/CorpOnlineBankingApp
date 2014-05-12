@@ -3,5 +3,5 @@ CorpOnlineBankingApp
 
 This is a BIRT-based iHub3 corporate online banking demo.
 
-*Deployment:*
-The .xml files in the Gadget folder need to be deployed into Info Console in .../iportal/Gadgets. Create the folder if it doesn't already exist.
+Create the directory "publishSubscribe" under C:\Actuate\iHub3\modules\BIRTiHub\iHub\web\iportal
+Deploy the 3 xml files under the PubSub folder to the newly created publishSubscribe folder.
