@@ -40,7 +40,7 @@ function acload() {
 	reqOps.setRepositoryType(actuate.RequestOptions.REPOSITORY_ENCYCLOPEDIA);
 	reqOps.setIServerUrl("http://localhost:8000");
 	reqOps.setVolumeProfile("default volume");
-	actuate.initialize( "http://localhost:8700/iportal" ,reqOps, null, null, afterInit );
+	actuate.initialize( "http://localhost:8700/iportal" ,reqOps, "Administrator", null, afterInit );
 }
 
 function afterInit(){
@@ -48,8 +48,8 @@ function afterInit(){
 	config.setContentPanel(new actuate.viewer.BrowserPanel());
 	viewer = new actuate.Viewer("acviewer");
 	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/HistCalcBalanceChartTable1.rptdesign");
-	viewer.setWidth(700);
-	viewer.setHeight(375);
+	viewer.setWidth(699);
+	viewer.setHeight(274);
 	var uiOpts = new actuate.viewer.UIOptions();
 	uiOpts.enableToolBar(false);
 	viewer.setUIOptions(uiOpts);

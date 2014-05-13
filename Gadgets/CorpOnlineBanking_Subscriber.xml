@@ -35,10 +35,10 @@ function callback(sender, message){
 	var config = new actuate.viewer.UIConfig();
 	config.setContentPanel(new actuate.viewer.BrowserPanel());
 	viewer = new actuate.Viewer("acviewer");
-	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/Bullets1Sim_New_DM_Good.rptdesign");
+	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/Bullets1Sim.rptdesign");
 	viewer.setParameters({pBullets: message});
-	viewer.setWidth(1000);
-	viewer.setHeight(800);
+	viewer.setWidth(667);
+	viewer.setHeight(390);
 	var uiOpts = new actuate.viewer.UIOptions();
 	uiOpts.enableToolBar(false);
 	viewer.setUIOptions(uiOpts);
@@ -51,16 +51,16 @@ function acload() {
 	reqOps.setRepositoryType(actuate.RequestOptions.REPOSITORY_ENCYCLOPEDIA);
 	reqOps.setIServerUrl("http://localhost:8000");
 	reqOps.setVolumeProfile("default volume");
-	actuate.initialize( "http://localhost:8700/iportal",reqOps, null, null, afterInit );
+	actuate.initialize( "http://localhost:8700/iportal",reqOps, "Administrator", null, afterInit );
 }
 
 function afterInit(){
 	var config = new actuate.viewer.UIConfig();
 	config.setContentPanel(new actuate.viewer.BrowserPanel());
 	viewer = new actuate.Viewer("acviewer");
-	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/Bullets1Sim_New_DM_Good.rptdocument");	
-	viewer.setWidth(1000);
-	viewer.setHeight(800);
+	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/Bullets1Sim.rptdocument");	
+	viewer.setWidth(667);
+	viewer.setHeight(390);
 	var uiOpts = new actuate.viewer.UIOptions();
 	uiOpts.enableToolBar(false);
 	viewer.setUIOptions(uiOpts);
