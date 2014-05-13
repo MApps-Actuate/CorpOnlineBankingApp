@@ -1278,7 +1278,7 @@
             <property name="fontSize">8pt</property>
             <property name="color">gray</property>
             <property name="textAlign">center</property>
-            <property name="width">4in</property>
+            <property name="width">6.4in</property>
             <property name="dataSet">BalanceSummary</property>
             <property name="theme">ThemesReportItems3.Modern Table</property>
             <list-property name="boundDataColumns">
@@ -1343,28 +1343,16 @@
                 <property name="textAlign">right</property>
             </column>
             <header>
-                <row id="7">
-                    <cell id="8">
-                        <property name="colSpan">3</property>
-                        <property name="rowSpan">1</property>
-                        <property name="fontWeight">bold</property>
-                        <property name="paddingBottom">6pt</property>
-                        <property name="textAlign">center</property>
-                        <label id="32">
-                            <property name="fontSize">10pt</property>
-                            <text-property name="text" key="BalanceSummaryTitle">BalanceSummaryTitle</text-property>
-                        </label>
-                    </cell>
-                </row>
                 <row id="55">
                     <cell id="56">
+                        <property name="backgroundColor">white</property>
                         <property name="fontWeight">bold</property>
                         <property name="paddingBottom">6pt</property>
                         <property name="textAlign">center</property>
                         <label id="60">
                             <property name="style">NewStyle</property>
                             <property name="fontSize">10pt</property>
-                            <property name="color">white</property>
+                            <property name="color">navy</property>
                             <property name="paddingLeft">5pt</property>
                             <property name="textAlign">left</property>
                             <text-property name="text" key="AllAccountsLink">AllAccountsLink</text-property>
@@ -1380,14 +1368,22 @@
                         </label>
                     </cell>
                     <cell id="57">
+                        <property name="backgroundColor">white</property>
                         <property name="fontWeight">bold</property>
                         <property name="paddingBottom">6pt</property>
                         <property name="textAlign">center</property>
+                        <label id="127">
+                            <text-property name="text" key="Cat1Label">Cat1</text-property>
+                        </label>
                     </cell>
                     <cell id="58">
+                        <property name="backgroundColor">white</property>
                         <property name="fontWeight">bold</property>
                         <property name="paddingBottom">6pt</property>
                         <property name="textAlign">center</property>
+                        <label id="130">
+                            <text-property name="text" key="Val2Label">Val2</text-property>
+                        </label>
                     </cell>
                 </row>
                 <row id="33">
@@ -1410,6 +1406,7 @@
                             <property name="fontSize">10pt</property>
                             <property name="color">white</property>
                             <property name="paddingLeft">5pt</property>
+                            <property name="paddingBottom">5pt</property>
                             <property name="textAlign">left</property>
                             <text-property name="text" key="Cat1Label">Cat1Label</text-property>
                         </label>
@@ -1430,6 +1427,8 @@
                         <label id="38">
                             <property name="fontSize">10pt</property>
                             <property name="color">white</property>
+                            <property name="paddingBottom">5pt</property>
+                            <property name="textAlign">center</property>
                             <text-property name="text" key="Val1Label">Val1Label</text-property>
                         </label>
                     </cell>
@@ -1450,6 +1449,8 @@
                         <label id="39">
                             <property name="fontSize">10pt</property>
                             <property name="color">white</property>
+                            <property name="paddingBottom">5pt</property>
+                            <property name="textAlign">center</property>
                             <text-property name="text" key="Val2Label">Val2Label</text-property>
                         </label>
                     </cell>
@@ -1468,108 +1469,71 @@
                 <property name="pageBreakAfter">auto</property>
                 <property name="pageBreakBefore">auto</property>
                 <property name="pageBreakInside">auto</property>
-                <header>
-                    <row id="23">
-                        <property name="borderBottomColor">#D4DEE2</property>
-                        <property name="borderBottomStyle">solid</property>
-                        <property name="borderBottomWidth">1px</property>
-                        <list-property name="highlightRules">
-                            <structure>
-                                <property name="operator">eq</property>
-                                <property name="backgroundColor">#D4DEE2</property>
-                                <expression name="testExpr" type="javascript">row.__rownum % 2</expression>
-                                <simple-property-list name="value1">
-                                    <value type="javascript">0</value>
-                                </simple-property-list>
-                            </structure>
-                        </list-property>
-                        <cell id="24">
-                            <property name="borderLeftColor">#C0C0C0</property>
-                            <property name="borderLeftStyle">solid</property>
-                            <property name="borderLeftWidth">thin</property>
-                            <property name="borderTopColor">#C0C0C0</property>
-                            <property name="borderTopStyle">solid</property>
-                            <property name="borderTopWidth">thin</property>
-                            <property name="paddingBottom">4pt</property>
-                            <data id="31">
-                                <property name="style">NewStyle</property>
-                                <property name="fontSize">9pt</property>
-                                <property name="paddingLeft">5pt</property>
-                                <property name="textAlign">left</property>
-                                <property name="resultSetColumn">Cat1</property>
-                                <list-property name="action">
-                                    <structure>
-                                        <property name="formatType">html</property>
-                                        <property name="linkType">drill-through</property>
-                                        <property name="reportName">Balance.rptdesign</property>
-                                        <property name="targetWindow">_blank</property>
-                                        <property name="targetFileType">report-design</property>
-                                        <list-property name="paramBindings">
-                                            <structure>
-                                                <property name="paramName">pCat1</property>
-                                                <simple-property-list name="expression">
-                                                    <value>row["Cat1"]</value>
-                                                </simple-property-list>
-                                            </structure>
-                                        </list-property>
-                                    </structure>
-                                </list-property>
-                            </data>
-                        </cell>
-                        <cell id="25">
-                            <property name="borderTopColor">#C0C0C0</property>
-                            <property name="borderTopStyle">solid</property>
-                            <property name="borderTopWidth">thin</property>
-                            <property name="paddingBottom">4pt</property>
-                            <data id="69">
-                                <property name="fontSize">9pt</property>
-                                <structure name="numberFormat">
-                                    <property name="category">Currency</property>
-                                    <property name="pattern">#,##0.00</property>
-                                </structure>
-                                <property name="resultSetColumn">sumVal1</property>
-                            </data>
-                        </cell>
-                        <cell id="26">
-                            <property name="borderRightColor">#C0C0C0</property>
-                            <property name="borderRightStyle">solid</property>
-                            <property name="borderRightWidth">thin</property>
-                            <property name="borderTopColor">#C0C0C0</property>
-                            <property name="borderTopStyle">solid</property>
-                            <property name="borderTopWidth">thin</property>
-                            <property name="paddingBottom">4pt</property>
-                            <property name="paddingRight">4pt</property>
-                            <data id="70">
-                                <property name="fontSize">9pt</property>
-                                <structure name="numberFormat">
-                                    <property name="category">Currency</property>
-                                    <property name="pattern">#,##0.00</property>
-                                </structure>
-                                <property name="resultSetColumn">sumVal2</property>
-                            </data>
-                        </cell>
-                    </row>
-                </header>
             </group>
-            <footer>
-                <row id="15">
-                    <cell id="16">
-                        <property name="borderTopColor">#C0C0C0</property>
-                        <property name="borderTopStyle">solid</property>
-                        <property name="borderTopWidth">thin</property>
+            <detail>
+                <row id="123">
+                    <list-property name="highlightRules">
+                        <structure>
+                            <property name="operator">eq</property>
+                            <property name="backgroundColor">#EDEEF3</property>
+                            <expression name="testExpr" type="javascript">row.__rownum % 2</expression>
+                            <simple-property-list name="value1">
+                                <value type="javascript">0</value>
+                            </simple-property-list>
+                        </structure>
+                    </list-property>
+                    <cell id="124">
+                        <data id="31">
+                            <property name="style">NewStyle</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="paddingLeft">5pt</property>
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">Cat1</property>
+                            <list-property name="action">
+                                <structure>
+                                    <property name="formatType">html</property>
+                                    <property name="linkType">drill-through</property>
+                                    <property name="reportName">Balance.rptdesign</property>
+                                    <property name="targetWindow">_blank</property>
+                                    <property name="targetFileType">report-design</property>
+                                    <list-property name="paramBindings">
+                                        <structure>
+                                            <property name="paramName">pCat1</property>
+                                            <simple-property-list name="expression">
+                                                <value>row["Cat1"]</value>
+                                            </simple-property-list>
+                                        </structure>
+                                    </list-property>
+                                </structure>
+                            </list-property>
+                        </data>
                     </cell>
-                    <cell id="17">
-                        <property name="borderTopColor">#C0C0C0</property>
-                        <property name="borderTopStyle">solid</property>
-                        <property name="borderTopWidth">thin</property>
+                    <cell id="125">
+                        <data id="129">
+                            <property name="fontSize">10pt</property>
+                            <property name="paddingRight">15pt</property>
+                            <structure name="numberFormat">
+                                <property name="category">Fixed</property>
+                                <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="textAlign">right</property>
+                            <property name="resultSetColumn">Val1</property>
+                        </data>
                     </cell>
-                    <cell id="18">
-                        <property name="borderTopColor">#C0C0C0</property>
-                        <property name="borderTopStyle">solid</property>
-                        <property name="borderTopWidth">thin</property>
+                    <cell id="126">
+                        <data id="131">
+                            <property name="fontSize">10pt</property>
+                            <property name="paddingRight">15pt</property>
+                            <structure name="numberFormat">
+                                <property name="category">Fixed</property>
+                                <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                            </structure>
+                            <property name="textAlign">right</property>
+                            <property name="resultSetColumn">Val2</property>
+                        </data>
                     </cell>
                 </row>
-            </footer>
+            </detail>
         </table>
     </body>
 </report>

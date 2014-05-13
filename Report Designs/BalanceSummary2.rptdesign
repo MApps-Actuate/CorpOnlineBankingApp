@@ -1473,7 +1473,7 @@
             <property name="borderRightStyle">none</property>
             <property name="borderTopStyle">none</property>
             <property name="textAlign">center</property>
-            <property name="width">4in</property>
+            <property name="width">6.5in</property>
             <property name="dataSet">BalanceSummary2</property>
             <list-property name="boundDataColumns">
                 <structure>
@@ -1543,24 +1543,6 @@
                 <property name="textAlign">right</property>
             </column>
             <header>
-                <row id="7">
-                    <cell id="8">
-                        <property name="colSpan">3</property>
-                        <property name="rowSpan">1</property>
-                        <property name="fontWeight">bold</property>
-                        <property name="borderBottomStyle">none</property>
-                        <property name="borderLeftStyle">none</property>
-                        <property name="borderRightStyle">none</property>
-                        <property name="borderTopStyle">none</property>
-                        <property name="paddingBottom">6pt</property>
-                        <property name="textAlign">center</property>
-                        <label id="32">
-                            <property name="fontSize">10pt</property>
-                            <property name="paddingTop">1pt</property>
-                            <text-property name="text" key="BalanceSummary2Title">BalanceSummaryTitle</text-property>
-                        </label>
-                    </cell>
-                </row>
                 <row id="55">
                     <cell id="56">
                         <property name="fontWeight">bold</property>
@@ -1629,8 +1611,7 @@
                         <property name="borderTopStyle">solid</property>
                         <property name="borderTopWidth">thin</property>
                         <label id="37">
-                            <property name="backgroundColor">white</property>
-                            <property name="color">gray</property>
+                            <property name="fontSize">10pt</property>
                             <property name="paddingLeft">5pt</property>
                             <property name="textAlign">left</property>
                             <text-property name="text" key="Cat4Label">Cat4Label</text-property>
@@ -1650,8 +1631,8 @@
                         <property name="borderTopStyle">solid</property>
                         <property name="borderTopWidth">thin</property>
                         <label id="38">
-                            <property name="backgroundColor">white</property>
-                            <property name="color">gray</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="textAlign">center</property>
                             <text-property name="text" key="Val1Label">Val1Label</text-property>
                         </label>
                     </cell>
@@ -1670,8 +1651,8 @@
                         <property name="borderTopWidth">thin</property>
                         <property name="paddingRight">4pt</property>
                         <label id="39">
-                            <property name="backgroundColor">white</property>
-                            <property name="color">gray</property>
+                            <property name="fontSize">10pt</property>
+                            <property name="textAlign">center</property>
                             <text-property name="text" key="Val2Label">Val2Label</text-property>
                         </label>
                     </cell>
@@ -1692,9 +1673,7 @@
                 <property name="pageBreakInside">auto</property>
                 <header>
                     <row id="23">
-                        <property name="backgroundColor">#0079C1</property>
                         <property name="fontWeight">bold</property>
-                        <property name="color">#FFFFFF</property>
                         <cell id="24">
                             <property name="borderBottomColor">#C0C0C0</property>
                             <property name="borderBottomStyle">solid</property>
@@ -1713,6 +1692,7 @@
                             <data id="31">
                                 <property name="style">NewStyle</property>
                                 <property name="fontFamily">"Verdana"</property>
+                                <property name="color">gray</property>
                                 <property name="paddingTop">1pt</property>
                                 <property name="paddingLeft">5pt</property>
                                 <property name="textAlign">left</property>

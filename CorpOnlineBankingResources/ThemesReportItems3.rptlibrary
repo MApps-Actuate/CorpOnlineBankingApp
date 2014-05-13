@@ -3180,10 +3180,11 @@
                     <property name="borderTopWidth">1px</property>
                 </style>
                 <style name="table-footer-cell" id="950">
-                    <property name="backgroundColor">#EDEEF3</property>
+                    <property name="backgroundColor">#0079C1</property>
                     <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
                     <property name="fontWeight">bold</property>
-                    <property name="color">#666666</property>
+                    <property name="color">#FFFFFF</property>
                     <property name="borderBottomColor">#DADADA</property>
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">1px</property>
@@ -3198,6 +3199,7 @@
                     <property name="borderTopWidth">1px</property>
                 </style>
                 <style name="table-group-footer-cell" id="951">
+                    <property name="backgroundColor">#D4DEE2</property>
                     <property name="fontFamily">"Verdana"</property>
                     <property name="borderBottomColor">#DADADA</property>
                     <property name="borderBottomStyle">solid</property>
@@ -3213,7 +3215,9 @@
                     <property name="borderTopWidth">1px</property>
                 </style>
                 <style name="table-group-header-cell" id="952">
+                    <property name="backgroundColor">#D4DEE2</property>
                     <property name="fontFamily">"Verdana"</property>
+                    <property name="color">#000000</property>
                     <property name="borderBottomColor">#DADADA</property>
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">1px</property>
@@ -3230,6 +3234,7 @@
                 <style name="table-header-cell" id="953">
                     <property name="backgroundColor">#0079C1</property>
                     <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
                     <property name="fontWeight">bold</property>
                     <property name="color">#FFFFFF</property>
                     <property name="borderBottomColor">#DADADA</property>

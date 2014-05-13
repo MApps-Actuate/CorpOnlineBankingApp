@@ -2145,7 +2145,7 @@ reportContext.setPersistentGlobalVariable("theOtherCounter3", new java.lang.Inte
     <property name="layoutPreference">auto layout</property>
     <list-property name="libraries">
         <structure>
-            <property name="fileName">ThemesReportItems3.rptlibrary</property>
+            <property name="fileName">CorpOnlineBankingResources/ThemesReportItems3.rptlibrary</property>
             <property name="namespace">ThemesReportItems3</property>
         </structure>
     </list-property>
