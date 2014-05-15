@@ -783,7 +783,9 @@ hideElement("js3_sim300k");
        </outline>
        <insets _body="0.0,2.0,0.0,3.0"/>
       </label>
-      <dataDefinition definition="row[&quot;Val1&quot;]"/>
+      <dataDefinition definition="row[&quot;Val1&quot;]">
+       <grouping/>
+      </dataDefinition>
       <dataPoint separator=", ">
        <components type="1"/>
       </dataPoint>
@@ -850,6 +852,7 @@ hideElement("js3_sim300k");
      <curveFitting _nil="1"/>
     </series>
     <grouping enabled="true" groupingUnit="7" groupType="1"/>
+    <sortKey definition="row[&quot;Cat1&quot;]"/>
    </seriesDefinitions>
    <lineAttributes style="0" thickness="1" visible="true">
     <color _body=",255,192,192,192"/>
@@ -951,6 +954,13 @@ hideElement("js3_sim300k");
                             </structure>
                         </list-property>
                         <property name="pageBreakInterval">50</property>
+                        <list-property name="sort">
+                            <structure>
+                                <expression name="key" type="javascript">row["Cat1"]</expression>
+                                <property name="direction">desc</property>
+                                <property name="strength">-1</property>
+                            </structure>
+                        </list-property>
                         <column id="96">
                             <property name="textAlign">left</property>
                             <property name="width">15pt</property>
@@ -1054,7 +1064,7 @@ hideElement("js3_sim300k");
                                         <list-property name="highlightRules">
                                             <structure>
                                                 <property name="operator">eq</property>
-                                                <property name="backgroundColor">#66B0D1</property>
+                                                <property name="backgroundColor">#9ECC4C</property>
                                                 <expression name="testExpr" type="javascript">row["Cat1"]</expression>
                                                 <simple-property-list name="value1">
                                                     <value type="javascript">"Revolving LOC"</value>
@@ -1070,7 +1080,7 @@ hideElement("js3_sim300k");
                                             </structure>
                                             <structure>
                                                 <property name="operator">eq</property>
-                                                <property name="backgroundColor">#9ECC4C</property>
+                                                <property name="backgroundColor">#66B0D1</property>
                                                 <expression name="testExpr" type="javascript">row["Cat1"]</expression>
                                                 <simple-property-list name="value1">
                                                     <value type="javascript">"Capital Equipment"</value>
@@ -1150,7 +1160,7 @@ hideElement("js3_sim300k");
                     <text id="90">
                         <property name="contentType">html</property>
                         <text-property name="content"><![CDATA[<script>
-hideImage("sim300k");
+hideImage("js3_sim300k");
 </script>]]></text-property>
                     </text>
                 </cell>

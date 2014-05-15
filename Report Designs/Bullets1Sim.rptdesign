@@ -2781,7 +2781,7 @@ else {
                                 <label id="312">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
+                                    <property name="color">white</property>
                                     <property name="textAlign">left</property>
                                     <text-property name="text">Revolving LOC:</text-property>
                                 </label>
@@ -2794,7 +2794,7 @@ else {
                                 <label id="313">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
+                                    <property name="color">white</property>
                                     <property name="textAlign">left</property>
                                     <expression name="bookmark">"Dom"</expression>
                                     <text-property name="text">Domestic Index Fund #1:</text-property>
@@ -3034,7 +3034,7 @@ else {
                                 <label id="139">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
+                                    <property name="color">white</property>
                                     <property name="textAlign">left</property>
                                     <expression name="bookmark">"Dom"</expression>
                                     <text-property name="text">Domestic Index Fund #1:</text-property>
@@ -3044,7 +3044,7 @@ else {
                                 <label id="141">
                                     <property name="fontFamily">"Verdana"</property>
                                     <property name="fontSize">8pt</property>
-                                    <property name="color">gray</property>
+                                    <property name="color">white</property>
                                     <property name="textAlign">right</property>
                                     <expression name="bookmark">"DomVal"</expression>
                                     <text-property name="text">750,000</text-property>
@@ -3052,16 +3052,6 @@ else {
                             </cell>
                             <cell id="142">
                                 <property name="backgroundColor">white</property>
-                                <image id="143">
-                                    <expression name="bookmark">"DomDelX"</expression>
-                                    <property name="source">embed</property>
-                                    <property name="imageName">deleteX.jpg</property>
-                                    <list-property name="action">
-                                        <structure>
-                                            <property name="linkType">none</property>
-                                        </structure>
-                                    </list-property>
-                                </image>
                             </cell>
                             <cell id="317">
                                 <property name="backgroundColor">white</property>

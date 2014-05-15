@@ -13,20 +13,20 @@
             <property name="activeTab">180a3b33-87c3-4efd-af27-ac689d7b111c</property>
             <property name="tabs">
                 <tab-element name="180a3b33-87c3-4efd-af27-ac689d7b111c" id="3">
-                    <property name="title">New Tab 1</property>
+                    <property name="title">Treasury</property>
                     <property name="sections">
                         <section id="4">
                             <property name="width">50%</property>
                             <property name="gadgets">
                                 <gadget name="Gadget_a4f2d30c-a8c4-4f16-a503-9dac9c6ec0bf" id="15">
-                                    <property name="height">232px</property>
+                                    <property name="height">176px</property>
                                     <property name="title">Current Day Consolidated Summary by Currency</property>
-                                    <property name="externalGadgetURI">^/Report Designs/BalanceSummary.rptdocument</property>
-                                    <property name="showTitle">true</property>
+                                    <property name="externalGadgetURI">^/Report Designs/BalanceSummary.rptdesign</property>
+                                    <property name="showTitle">false</property>
                                     <property name="showBorder">true</property>
                                     <property name="zIndex">3</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">232px</property>
+                                    <property name="height">176px</property>
                                     <property name="caption">
                                         <gadget-caption id="16">
                                             <property name="showCaption">true</property>
@@ -51,22 +51,23 @@
                                             <property name="gadgetType">viewer</property>
                                             <property name="externalContentRef">
                                                 <external-element-ref>
-                                                    <property name="sourceFile">^/Report Designs/BalanceSummary.rptdocument</property>
+                                                    <property name="sourceFile">^/Report Designs/BalanceSummarybyCurrency.rptdesign</property>
                                                 </external-element-ref>
                                             </property>
                                         </data-view>
                                     </property>
                                 </gadget>
-                                <gadget name="Gadget_82521167-2293-431a-bce5-20f5341be463" id="12">
-                                    <property name="height">50px</property>
-                                    <property name="title">Enter Parameter</property>
-                                    <property name="showTitle">true</property>
+                                <gadget name="Gadget_208296bb-f2dd-478b-a6b3-ba273db8beae" id="21">
+                                    <property name="height">259px</property>
+                                    <property name="title">ALERT - Balances Less than 100K</property>
+                                    <property name="externalGadgetURI">^/Report Designs/BalanceAlert.rptdesign</property>
+                                    <property name="showTitle">false</property>
                                     <property name="showBorder">true</property>
-                                    <property name="zIndex">1</property>
+                                    <property name="zIndex">5</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">50px</property>
+                                    <property name="height">259px</property>
                                     <property name="caption">
-                                        <gadget-caption id="13">
+                                        <gadget-caption id="22">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
                                             <property name="fontFamily">"Source Sans Pro"</property>
@@ -78,71 +79,7 @@
                                         </gadget-caption>
                                     </property>
                                     <property name="content">
-                                        <dropdown-data-selector id="14">
-                                            <property name="externalContentRef">
-                                                <external-element-ref>
-                                                    <property name="sourceFile">^/Report Designs/Balance.rptdesign</property>
-                                                    <property name="targetBookmark">pCat1</property>
-                                                    <property name="isNoValueSupported">true</property>
-                                                </external-element-ref>
-                                            </property>
-                                            <property name="operator">eq</property>
-                                            <property name="controlType">text-box</property>
-                                            <property name="dataType">string</property>
-                                            <simple-property-list name="selectedValues">
-                                                <value>European Business - GBP</value>
-                                            </simple-property-list>
-                                            <property name="allowTyping">false</property>
-                                            <property name="autoSuggest">false</property>
-                                            <property name="listLimit">1000</property>
-                                            <expression name="defaultValue" type="javascript">European Business - GBP</expression>
-                                        </dropdown-data-selector>
-                                    </property>
-                                    <property name="observers">
-                                        <event-subscriber>
-                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
-                                            <property name="eventObjects">
-                                                <event-object>
-                                                    <property name="gadget">f7d977a8-310c-4541-8aae-8cccb96c6fa8</property>
-                                                    <property name="dirty">false</property>
-                                                </event-object>
-                                            </property>
-                                        </event-subscriber>
-                                        <event-subscriber>
-                                            <property name="eventName">SELECT_EVENT:SEMANTIC_parameter</property>
-                                            <property name="eventObjects">
-                                                <event-object>
-                                                    <property name="appliedTo">pCat1</property>
-                                                    <property name="gadget">Gadget_24072551-e42f-4834-9334-c2c633332c27</property>
-                                                    <property name="dirty">false</property>
-                                                </event-object>
-                                            </property>
-                                        </event-subscriber>
-                                    </property>
-                                </gadget>
-                                <gadget name="Gadget_24072551-e42f-4834-9334-c2c633332c27" id="9">
-                                    <property name="height">219px</property>
-                                    <property name="title">Consolidated Balance</property>
-                                    <property name="externalGadgetURI">^/Report Designs/Balance.rptdesign</property>
-                                    <property name="showTitle">true</property>
-                                    <property name="showBorder">true</property>
-                                    <property name="zIndex">2</property>
-                                    <property name="showScrollBar">false</property>
-                                    <property name="height">219px</property>
-                                    <property name="caption">
-                                        <gadget-caption id="10">
-                                            <property name="showCaption">true</property>
-                                            <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
-                                            <property name="fontSize">18pt</property>
-                                            <property name="fontWeight">normal</property>
-                                            <property name="fontStyle">normal</property>
-                                            <property name="color">#353535</property>
-                                            <property name="textUnderline">none</property>
-                                        </gadget-caption>
-                                    </property>
-                                    <property name="content">
-                                        <data-view id="11">
+                                        <data-view id="23">
                                             <list-property name="userProperties">
                                                 <structure>
                                                     <property name="name">showViewerToolbar</property>
@@ -153,30 +90,10 @@
                                             <property name="gadgetType">viewer</property>
                                             <property name="externalContentRef">
                                                 <external-element-ref>
-                                                    <property name="sourceFile">^/Report Designs/Balance.rptdesign</property>
+                                                    <property name="sourceFile">^/Report Designs/BalanceAlert.rptdesign</property>
                                                 </external-element-ref>
                                             </property>
-                                            <property name="paramSettings">
-                                                <param-setting>
-                                                    <property name="paramName">pCat1</property>
-                                                    <expression name="value">European Business - GBP</expression>
-                                                    <property name="isHidden">true</property>
-                                                    <expression name="defaultValue" type="javascript">European Business - GBP</expression>
-                                                </param-setting>
-                                            </property>
                                         </data-view>
-                                    </property>
-                                    <property name="subscribeTo">
-                                        <event-subscriber>
-                                            <property name="eventName">SELECT_EVENT:SEMANTIC_parameter</property>
-                                            <property name="eventObjects">
-                                                <event-object>
-                                                    <property name="appliedTo">pCat1</property>
-                                                    <property name="gadget">Gadget_82521167-2293-431a-bce5-20f5341be463</property>
-                                                    <property name="dirty">false</property>
-                                                </event-object>
-                                            </property>
-                                        </event-subscriber>
                                     </property>
                                 </gadget>
                                 <gadget name="f7d977a8-310c-4541-8aae-8cccb96c6fa8" id="6">
@@ -197,17 +114,6 @@
                                     <property name="content">
                                         <current-selections id="7"/>
                                     </property>
-                                    <property name="subscribeTo">
-                                        <event-subscriber>
-                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
-                                            <property name="eventObjects">
-                                                <event-object>
-                                                    <property name="gadget">Gadget_82521167-2293-431a-bce5-20f5341be463</property>
-                                                    <property name="dirty">false</property>
-                                                </event-object>
-                                            </property>
-                                        </event-subscriber>
-                                    </property>
                                 </gadget>
                             </property>
                         </section>
@@ -217,7 +123,7 @@
                                 <gadget name="Gadget_ae010647-afe1-4a36-b32b-c76439ba09d4" id="18">
                                     <property name="title">Current Day Balance Summary by Region</property>
                                     <property name="externalGadgetURI">^/Report Designs/BalanceSummary2.rptdesign</property>
-                                    <property name="showTitle">true</property>
+                                    <property name="showTitle">false</property>
                                     <property name="showBorder">true</property>
                                     <property name="zIndex">4</property>
                                     <property name="showScrollBar">false</property>
@@ -245,7 +151,7 @@
                                             <property name="gadgetType">viewer</property>
                                             <property name="externalContentRef">
                                                 <external-element-ref>
-                                                    <property name="sourceFile">^/Report Designs/BalanceSummary2.rptdesign</property>
+                                                    <property name="sourceFile">^/Report Designs/BalanceSummaryByRegion.rptdesign</property>
                                                 </external-element-ref>
                                             </property>
                                         </data-view>

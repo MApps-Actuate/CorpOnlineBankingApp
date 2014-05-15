@@ -483,10 +483,6 @@
     <property name="layoutPreference">auto layout</property>
     <list-property name="libraries">
         <structure>
-            <property name="fileName">CorpOnlineBankingResources/Connection.rptlibrary</property>
-            <property name="namespace">Connection</property>
-        </structure>
-        <structure>
             <property name="fileName">CorpOnlineBankingResources/ThemesReportItems3.rptlibrary</property>
             <property name="namespace">ThemesReportItems3</property>
         </structure>
@@ -498,8 +494,9 @@
             <property name="dataType">string</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">Switzerland</value>
+                <value type="constant">Ireland</value>
             </simple-property-list>
+            <list-property name="selectionList"/>
             <property name="paramType">simple</property>
             <property name="controlType">text-box</property>
             <structure name="format">
@@ -664,16 +661,22 @@
             <property name="marginTop">0pt</property>
             <property name="marginLeft">0pt</property>
             <property name="textAlign">center</property>
-            <property name="width">6in</property>
+            <property name="width">7in</property>
             <expression name="bookmark">"grid"</expression>
             <column id="7"/>
+            <row id="128">
+                <property name="height">0.25in</property>
+                <cell id="129"/>
+            </row>
             <row id="8">
                 <cell id="9">
                     <label id="72">
                         <property name="fontFamily">"Verdana"</property>
-                        <property name="fontSize">10pt</property>
+                        <property name="fontSize">12pt</property>
                         <property name="fontWeight">bold</property>
                         <property name="color">gray</property>
+                        <property name="paddingTop">1pt</property>
+                        <property name="paddingBottom">8pt</property>
                         <property name="textAlign">center</property>
                         <text-property name="text" key="BalanceTitle">Balance Title</text-property>
                     </label>
@@ -685,8 +688,10 @@
                     <property name="paddingBottom">8pt</property>
                     <data id="105">
                         <property name="fontFamily">"Verdana"</property>
+                        <property name="fontWeight">bold</property>
                         <property name="color">gray</property>
-                        <property name="paddingTop">1pt</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingBottom">5pt</property>
                         <property name="textAlign">left</property>
                         <list-property name="boundDataColumns">
                             <structure>
@@ -789,9 +794,7 @@
                         <header>
                             <row id="15">
                                 <property name="fontWeight">bold</property>
-                                <property name="color">#FFFFFF</property>
                                 <cell id="106">
-                                    <property name="backgroundColor">#FFFFFF</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">thin</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -802,13 +805,11 @@
                                     <property name="borderTopWidth">thin</property>
                                     <property name="paddingLeft">4pt</property>
                                     <label id="115">
-                                        <property name="color">gray</property>
                                         <property name="textAlign">left</property>
                                         <text-property name="text" key="Cat5Label">Cat5Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="16">
-                                    <property name="backgroundColor">#FFFFFF</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">thin</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -819,13 +820,11 @@
                                     <property name="borderTopWidth">thin</property>
                                     <property name="paddingLeft">4pt</property>
                                     <label id="46">
-                                        <property name="color">gray</property>
-                                        <property name="textAlign">left</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Cat2Label">Cat2Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="17">
-                                    <property name="backgroundColor">#FFFFFF</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">thin</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -835,13 +834,11 @@
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">thin</property>
                                     <label id="48">
-                                        <property name="color">gray</property>
-                                        <property name="textAlign">left</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Cat3Label">Cat3Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="18">
-                                    <property name="backgroundColor">#FFFFFF</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">thin</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -851,12 +848,11 @@
                                     <property name="borderTopStyle">solid</property>
                                     <property name="borderTopWidth">thin</property>
                                     <label id="50">
-                                        <property name="color">gray</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Val1Label">Val1Label</text-property>
                                     </label>
                                 </cell>
                                 <cell id="19">
-                                    <property name="backgroundColor">#FFFFFF</property>
                                     <property name="borderBottomStyle">solid</property>
                                     <property name="borderBottomWidth">thin</property>
                                     <property name="borderLeftStyle">solid</property>
@@ -867,7 +863,7 @@
                                     <property name="borderTopWidth">thin</property>
                                     <property name="paddingRight">4pt</property>
                                     <label id="52">
-                                        <property name="color">gray</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Val2Label">Val2Label</text-property>
                                     </label>
                                 </cell>
@@ -913,8 +909,9 @@
                                         <property name="borderTopStyle">solid</property>
                                         <property name="borderTopWidth">thin</property>
                                         <data id="103">
+                                            <property name="fontSize">10pt</property>
                                             <property name="fontWeight">bold</property>
-                                            <property name="color">white</property>
+                                            <property name="color">gray</property>
                                             <property name="resultSetColumn">Cat5</property>
                                         </data>
                                     </cell>
@@ -948,8 +945,10 @@
                                         <property name="borderTopStyle">solid</property>
                                         <property name="borderTopWidth">thin</property>
                                         <data id="121">
+                                            <property name="fontSize">10pt</property>
                                             <property name="fontWeight">bold</property>
-                                            <property name="color">#FFFFFF</property>
+                                            <property name="color">gray</property>
+                                            <property name="paddingRight">15pt</property>
                                             <structure name="numberFormat">
                                                 <property name="category">Currency</property>
                                                 <property name="pattern">#,##0.00</property>
@@ -968,8 +967,10 @@
                                         <property name="borderTopWidth">thin</property>
                                         <property name="paddingRight">4pt</property>
                                         <data id="122">
+                                            <property name="fontSize">10pt</property>
                                             <property name="fontWeight">bold</property>
-                                            <property name="color">#FFFFFF</property>
+                                            <property name="color">gray</property>
+                                            <property name="paddingRight">15pt</property>
                                             <structure name="numberFormat">
                                                 <property name="category">Currency</property>
                                                 <property name="pattern">#,##0.00</property>
@@ -1008,6 +1009,7 @@
                                     <property name="paddingLeft">1pt</property>
                                     <property name="paddingBottom">1pt</property>
                                     <data id="47">
+                                        <property name="fontSize">10pt</property>
                                         <property name="textAlign">left</property>
                                         <property name="resultSetColumn">Cat2</property>
                                     </data>
@@ -1024,6 +1026,7 @@
                                     <property name="paddingTop">1pt</property>
                                     <property name="paddingBottom">1pt</property>
                                     <data id="49">
+                                        <property name="fontSize">10pt</property>
                                         <property name="textAlign">left</property>
                                         <property name="resultSetColumn">Cat3</property>
                                     </data>
@@ -1040,6 +1043,8 @@
                                     <property name="paddingTop">1pt</property>
                                     <property name="paddingBottom">1pt</property>
                                     <data id="51">
+                                        <property name="fontSize">10pt</property>
+                                        <property name="paddingRight">15pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00;(#,##0.00)</property>
@@ -1060,8 +1065,9 @@
                                     <property name="paddingBottom">1pt</property>
                                     <property name="paddingRight">4pt</property>
                                     <data id="53">
+                                        <property name="fontSize">10pt</property>
                                         <property name="paddingTop">1pt</property>
-                                        <property name="paddingRight">1pt</property>
+                                        <property name="paddingRight">15pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00;(#,##0.00)</property>

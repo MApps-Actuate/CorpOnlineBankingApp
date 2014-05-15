@@ -256,6 +256,7 @@
     </data-sources>
     <data-sets>
         <data-mart-data-set name="Balance" id="86">
+            <property name="nullsOrdering">nulls lowest</property>
             <list-property name="columnHints">
                 <structure>
                     <property name="columnName">Cat1</property>
@@ -374,26 +375,49 @@
     <body>
         <grid id="6">
             <property name="textAlign">center</property>
-            <property name="width">6in</property>
+            <property name="width">8in</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Parameter</property>
+                    <expression name="expression" type="javascript">params["pCat1"].value</expression>
+                    <property name="dataType">string</property>
+                    <property name="allowExport">true</property>
+                </structure>
+            </list-property>
             <expression name="bookmark">"grid"</expression>
             <column id="7"/>
+            <row id="97">
+                <property name="height">0.25in</property>
+                <cell id="98"/>
+            </row>
             <row id="8">
                 <cell id="9">
                     <label id="72">
                         <property name="fontFamily">"Verdana"</property>
-                        <property name="fontSize">10pt</property>
+                        <property name="fontSize">12pt</property>
                         <property name="fontWeight">bold</property>
                         <property name="color">gray</property>
+                        <property name="paddingBottom">8pt</property>
                         <property name="textAlign">center</property>
                         <text-property name="text" key="BalanceTitle">Balance Title</text-property>
                     </label>
                 </cell>
             </row>
+            <row id="99">
+                <cell id="100">
+                    <data id="101">
+                        <property name="fontFamily">"Verdana"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="color">gray</property>
+                        <property name="paddingTop">5pt</property>
+                        <property name="paddingBottom">5pt</property>
+                        <property name="resultSetColumn">Parameter</property>
+                    </data>
+                </cell>
+            </row>
             <row id="12">
                 <cell id="13">
                     <table id="14">
-                        <property name="fontFamily">"Arial"</property>
-                        <property name="fontSize">8pt</property>
                         <property name="width">100%</property>
                         <list-property name="highlightRules">
                             <structure>
@@ -494,7 +518,9 @@
                                     <property name="paddingLeft">4pt</property>
                                     <label id="46">
                                         <property name="color">white</property>
-                                        <property name="textAlign">left</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Cat2Label">Cat2Label</text-property>
                                     </label>
                                 </cell>
@@ -510,7 +536,9 @@
                                     <property name="borderTopWidth">thin</property>
                                     <label id="48">
                                         <property name="color">white</property>
-                                        <property name="textAlign">left</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Cat3Label">Cat3Label</text-property>
                                     </label>
                                 </cell>
@@ -526,6 +554,9 @@
                                     <property name="borderTopWidth">thin</property>
                                     <label id="50">
                                         <property name="color">white</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Val1Label">Val1Label</text-property>
                                     </label>
                                 </cell>
@@ -542,6 +573,9 @@
                                     <property name="paddingRight">4pt</property>
                                     <label id="52">
                                         <property name="color">white</property>
+                                        <property name="paddingTop">5pt</property>
+                                        <property name="paddingBottom">5pt</property>
+                                        <property name="textAlign">center</property>
                                         <text-property name="text" key="Val2Label">Val2Label</text-property>
                                     </label>
                                 </cell>
@@ -604,6 +638,7 @@
                                     <property name="paddingBottom">4pt</property>
                                     <data id="49">
                                         <property name="fontSize">10pt</property>
+                                        <property name="paddingLeft">5pt</property>
                                         <property name="textAlign">left</property>
                                         <property name="resultSetColumn">Cat3</property>
                                     </data>
@@ -621,6 +656,7 @@
                                     <property name="paddingBottom">4pt</property>
                                     <data id="51">
                                         <property name="fontSize">10pt</property>
+                                        <property name="paddingRight">10pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00;(#,##0.00)</property>
@@ -641,7 +677,7 @@
                                     <property name="paddingBottom">4pt</property>
                                     <data id="53">
                                         <property name="fontSize">10pt</property>
-                                        <property name="paddingRight">4pt</property>
+                                        <property name="paddingRight">10pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00;(#,##0.00)</property>
@@ -656,7 +692,7 @@
                                 <cell id="93">
                                     <data id="45">
                                         <property name="fontSize">10pt</property>
-                                        <property name="fontWeight">normal</property>
+                                        <property name="fontWeight">bold</property>
                                         <property name="color">white</property>
                                         <property name="textAlign">left</property>
                                         <property name="resultSetColumn">Cat1</property>
@@ -667,6 +703,8 @@
                                     <data id="81">
                                         <property name="fontSize">10pt</property>
                                         <property name="color">white</property>
+                                        <property name="paddingLeft">1pt</property>
+                                        <property name="paddingRight">10pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00</property>
@@ -675,9 +713,11 @@
                                     </data>
                                 </cell>
                                 <cell id="96">
+                                    <property name="paddingRight">10pt</property>
                                     <data id="82">
                                         <property name="fontSize">10pt</property>
                                         <property name="color">white</property>
+                                        <property name="paddingLeft">10pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00</property>

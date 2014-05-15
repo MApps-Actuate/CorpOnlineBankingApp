@@ -3166,6 +3166,7 @@
                 </style>
                 <style name="table-detail-cell" id="949">
                     <property name="fontFamily">"Verdana"</property>
+                    <property name="color">#808080</property>
                     <property name="borderBottomColor">#DADADA</property>
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">1px</property>
@@ -3201,6 +3202,7 @@
                 <style name="table-group-footer-cell" id="951">
                     <property name="backgroundColor">#D4DEE2</property>
                     <property name="fontFamily">"Verdana"</property>
+                    <property name="color">#808080</property>
                     <property name="borderBottomColor">#DADADA</property>
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">1px</property>
@@ -3217,7 +3219,6 @@
                 <style name="table-group-header-cell" id="952">
                     <property name="backgroundColor">#D4DEE2</property>
                     <property name="fontFamily">"Verdana"</property>
-                    <property name="color">#000000</property>
                     <property name="borderBottomColor">#DADADA</property>
                     <property name="borderBottomStyle">solid</property>
                     <property name="borderBottomWidth">1px</property>
