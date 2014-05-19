@@ -1038,7 +1038,7 @@
                                         <list-property name="action">
                                             <structure>
                                                 <property name="linkType">hyperlink</property>
-                                                <expression name="uri" type="constant">Report Designs/CashPosition.xls</expression>
+                                                <expression name="uri" type="constant">servlet/Applications/CorpOnlineBankingApp/Report%20Designs/CashPosition.xls</expression>
                                                 <property name="targetWindow">_blank</property>
                                             </structure>
                                         </list-property>
