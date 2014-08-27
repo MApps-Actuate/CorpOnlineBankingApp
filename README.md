@@ -9,3 +9,9 @@ Deploy the 3 xml files from the Gadgets folder to the newly created publishSubsc
 The values 300,000 and 750,000 and corresponding funds are hardwired to show ending balance and simulated amounts. (brought out in storyboard).
 
 Treasury Services, Cash Management, Banking. Can also be used to show simulations, pub/sub and internationalization.
+
+To learn how to use GitHub in Eclipse with this repository, check out the following link:
+http://saleswiki.actuate.com/MApps%20Demo%20Deployment.ashx
+
+To see more BIRT examples and get support from the BIRT community, go to:
+http://developer.actuate.com
