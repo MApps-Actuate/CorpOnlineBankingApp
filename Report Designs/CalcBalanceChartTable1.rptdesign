@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
     <property name="comments">Copyright (c) 2007 &lt;&lt;Your Company Name here>></property>
-    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.4.0.v20150128-0131 Build &lt;4.2.3.v20150128-0131></property>
     <html-property name="description">Creates a blank report with no predefined content.</html-property>
     <simple-property-list name="includeResource">
         <value>CorpOnlineBankingResources/CalcBalanceChartTable1</value>
@@ -385,18 +385,21 @@ function showElement(elementName) {
 }
 
 function simulate() {
- document.getElementById("js3_nosim").style.display="none";
- document.getElementById("js3_sim300k").style.display="block";
+//////// CW  //////// document.getElementById("js3_nosim").style.display="none";
+//////// CW  //////// document.getElementById("js3_sim300k").style.display="block";
+
+$("[id$='nosim']").hide();
+$("[id$='sim300k']").show();
+
 //hideElement("js3_nosim");
 //showElement("js3_sim300k")
  publishSetBullet("2");
    }
 
-hideElement("js3_sim300k");  
-</script>	
-	
+//////// CW  ////////hideElement("js3_sim300k");  
+$("[id$='sim300k']").hide();
 
-    ]]></text-property>
+</script>	]]></text-property>
                     </text>
                     <extended-item extensionName="Chart" name="NewChart1" id="86">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
@@ -1157,12 +1160,6 @@ hideElement("js3_sim300k");
                             </row>
                         </footer>
                     </table>
-                    <text id="90">
-                        <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<script>
-hideImage("js3_sim300k");
-</script>]]></text-property>
-                    </text>
                 </cell>
             </row>
         </grid>
