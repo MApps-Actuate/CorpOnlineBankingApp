@@ -401,7 +401,6 @@
                                             <structure>
                                                 <property name="operator">lt</property>
                                                 <property name="backgroundColor">#FF0000</property>
-                                                <property name="fontFamily">"Lato"</property>
                                                 <property name="fontStyle">normal</property>
                                                 <property name="fontWeight">bold</property>
                                                 <property name="color">#FFFFFF</property>
@@ -414,7 +413,6 @@
                                             <structure>
                                                 <property name="operator">between</property>
                                                 <property name="backgroundColor">#FFFF00</property>
-                                                <property name="fontFamily">"Lato"</property>
                                                 <property name="fontWeight">bold</property>
                                                 <property name="color">#808080</property>
                                                 <expression name="testExpr" type="javascript">row["Val2"]</expression>

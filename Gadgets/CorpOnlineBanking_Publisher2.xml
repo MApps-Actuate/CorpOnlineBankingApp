@@ -49,7 +49,7 @@ function afterInit(){
 	viewer = new actuate.Viewer("acviewer");
 	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/HistCalcBalanceChartTable1.rptdesign");
 	viewer.setWidth(699);
-	viewer.setHeight(274);
+	viewer.setHeight(390);
 	var uiOpts = new actuate.viewer.UIOptions();
 	uiOpts.enableToolBar(false);
 	viewer.setUIOptions(uiOpts);

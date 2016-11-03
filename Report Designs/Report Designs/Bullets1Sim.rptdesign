@@ -585,9 +585,9 @@ else {
   <gadgetPartsSupportingEffects _body="tooltip"/>
   <scale autoAdjustMajorTickMarks="true" majorTickMarksCount="5" max="row[&quot;UpperLimit&quot;]" min="row[&quot;LowerLimit&quot;]" minorTickMarksCount="4"/>
   <region color="ce0315" endValue="30.0" label="A" transparency="255"/>
-  <region color="80cfff" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
+  <region color="66b0d1" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
   <region color="93cc4c" endValue="100.0" label="C" startValue="70.0" transparency="255"/>
-  <thresholds color="c6eaff" isDashed="false" isTrendZone="false" length="50" lineWidth="6" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
+  <thresholds color="99ccff" isDashed="false" isTrendZone="false" length="50" lineWidth="4" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
   <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
    <major color="b7b7b7" height="4" width="1"/>
    <minor color="b7b7b7" height="2" width="1"/>
@@ -598,7 +598,7 @@ else {
    <needle borderColor="000000" borderTransparency="255" borderWidth="1" fillColor="000000" fillTransparency="255" shape="0" size="10" tooltipShowValue="true"/>
   </linearGauge>
   <bullet showRoundCorners="true">
-   <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" color="3366ff" showBorder="true" transparency="255" width="32"/>
+   <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" showBorder="true" transparency="255" width="32"/>
    <bulletPlot borderTransparency="255" borderWidth="2" showAsDot="false" showBorder="false" showShadow="false" showValueLabel="true"/>
   </bullet>
   <font color="555555" font="Lato" size="10"/>
@@ -706,7 +706,6 @@ else {
                                 <text-property name="displayName">Name</text-property>
                                 <expression name="expression" type="javascript">dataSetRow["Name"]</expression>
                                 <property name="dataType">string</property>
-                                <property name="allowExport">true</property>
                             </structure>
                             <structure>
                                 <property name="name">Amount</property>
@@ -807,9 +806,9 @@ else {
   <gadgetPartsSupportingEffects _body="tooltip"/>
   <scale autoAdjustMajorTickMarks="true" majorTickMarksCount="5" max="row[&quot;UpperLimit&quot;]" min="row[&quot;LowerLimit&quot;]" minorTickMarksCount="4"/>
   <region color="ce0315" endValue="30.0" label="A" transparency="255"/>
-  <region color="80cfff" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
+  <region color="66b0d1" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
   <region color="93cc4c" endValue="100.0" label="C" startValue="70.0" transparency="255"/>
-  <thresholds color="c6eaff" isDashed="false" isTrendZone="false" length="50" lineWidth="6" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
+  <thresholds color="99ccff" isDashed="false" isTrendZone="false" length="50" lineWidth="4" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
   <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
    <major color="b7b7b7" height="4" width="1"/>
    <minor color="b7b7b7" height="2" width="1"/>
@@ -820,7 +819,7 @@ else {
    <needle borderColor="000000" borderTransparency="255" borderWidth="1" fillColor="000000" fillTransparency="255" shape="0" size="10" tooltipShowValue="true"/>
   </linearGauge>
   <bullet showRoundCorners="true">
-   <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" color="3366ff" showBorder="true" transparency="255" width="32"/>
+   <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" showBorder="true" transparency="255" width="32"/>
    <bulletPlot borderTransparency="255" borderWidth="2" showAsDot="false" showBorder="false" showShadow="false" showValueLabel="true"/>
   </bullet>
   <font color="555555" font="Lato" size="10"/>
@@ -976,7 +975,6 @@ else {
                                 <text-property name="displayName">Name</text-property>
                                 <expression name="expression" type="javascript">dataSetRow["Name"]</expression>
                                 <property name="dataType">string</property>
-                                <property name="allowExport">true</property>
                             </structure>
                             <structure>
                                 <property name="name">Amount</property>
@@ -1076,9 +1074,9 @@ else {
   <gadgetPartsSupportingEffects _body="tooltip"/>
   <scale autoAdjustMajorTickMarks="true" majorTickMarksCount="5" max="row[&quot;UpperLimit&quot;]" min="row[&quot;LowerLimit&quot;]" minorTickMarksCount="4"/>
   <region color="ce0315" endValue="30.0" label="A" transparency="255"/>
-  <region color="80cfff" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
+  <region color="66b0d1" endValue="70.0" label="B" startValue="30.0" transparency="255"/>
   <region color="93cc4c" endValue="100.0" label="C" startValue="70.0" transparency="255"/>
-  <thresholds color="c6eaff" isDashed="false" isTrendZone="false" length="50" lineWidth="6" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
+  <thresholds color="99ccff" isDashed="false" isTrendZone="false" length="50" lineWidth="4" markerRadius="4" showMarker="false" showThreshold="true" showValueOnTop="true" startValue="50000.0" transparency="255"/>
   <ticks maxLabel="" minLabel="" placeTicksInside="false" placeValuesInside="false" showLimits="true" showTickMarks="true" showTickValues="true" ticksBelowGauge="true" ticksOnRight="false">
    <major color="b7b7b7" height="4" width="1"/>
    <minor color="b7b7b7" height="2" width="1"/>
@@ -1089,7 +1087,7 @@ else {
    <needle borderColor="000000" borderTransparency="255" borderWidth="1" fillColor="000000" fillTransparency="255" shape="0" size="10" tooltipShowValue="true"/>
   </linearGauge>
   <bullet showRoundCorners="true">
-   <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" color="3366ff" showBorder="true" transparency="255" width="32"/>
+   <valueIndicator borderColor="ffffff" borderTransparency="255" borderWidth="1" showBorder="true" transparency="255" width="32"/>
    <bulletPlot borderTransparency="255" borderWidth="2" showAsDot="false" showBorder="false" showShadow="false" showValueLabel="true"/>
   </bullet>
   <font color="555555" font="Lato" size="10"/>

@@ -3,33 +3,30 @@
     <property name="comments">Copyright (c) 2006 &lt;&lt;Your Company Name here>></property>
     <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201603260016</property>
     <simple-property-list name="includeResource">
-        <value>CorpOnlineBankingResources/BalanceAlert_en_US</value>
+        <value>CorpOnlineBankingResources/BalanceAll</value>
     </simple-property-list>
     <property name="units">in</property>
     <property name="layoutPreference">auto layout</property>
     <list-property name="libraries">
-        <structure>
-            <property name="fileName">CorpOnlineBankingResources/Connection.rptlibrary</property>
-            <property name="namespace">Connection</property>
-        </structure>
         <structure>
             <property name="fileName">CorpOnlineBankingResources/ThemesReportItems3.rptlibrary</property>
             <property name="namespace">ThemesReportItems3</property>
         </structure>
     </list-property>
     <data-sources>
-        <data-mart-data-source name="BDO" id="91">
+        <data-mart-data-source name="BDO" id="85">
             <property name="datamartURL">Data Objects/TreasuryData</property>
             <property name="accessType">latest</property>
         </data-mart-data-source>
     </data-sources>
     <data-sets>
-        <data-mart-data-set name="BalanceAlert" id="92">
+        <data-mart-data-set name="BalanceAll" id="86">
+            <property name="nullsOrdering">nulls lowest</property>
             <list-property name="columnHints">
                 <structure>
                     <property name="columnName">Cat1</property>
                     <property name="analysis">dimension</property>
-                    <text-property name="displayName" key="Cat1Label">Type-Currency</text-property>
+                    <text-property name="displayName" key="Cat1Label">Currency</text-property>
                     <text-property name="heading">Cat1</text-property>
                     <property name="horizontalAlign">left</property>
                     <property name="indexColumn">false</property>
@@ -102,7 +99,7 @@
                 </list-property>
             </structure>
             <property name="dataSource">BDO</property>
-            <property name="dataObject">BalanceAlert</property>
+            <property name="dataObject">BalanceAll</property>
             <list-property name="selectedColumns">
                 <structure>
                     <property name="position">1</property>
@@ -133,7 +130,7 @@
         </data-mart-data-set>
     </data-sets>
     <styles>
-        <style name="NewStyle" id="85">
+        <style name="NewStyle" id="78">
             <property name="fontFamily">"Arial"</property>
             <property name="color">#0000FF</property>
             <property name="textUnderline">underline</property>
@@ -150,22 +147,40 @@
     </page-setup>
     <body>
         <grid id="6">
+            <property name="fontFamily">"Lato"</property>
             <property name="textAlign">center</property>
-            <property name="width">6.5in</property>
-            <expression name="bookmark">"grid"</expression>
+            <property name="width">8.5in</property>
             <column id="7"/>
+            <row id="97">
+                <property name="height">0.25in</property>
+                <cell id="98"/>
+            </row>
+            <row id="8">
+                <cell id="9">
+                    <label id="72">
+                        <property name="fontFamily">"Lato"</property>
+                        <property name="fontSize">12pt</property>
+                        <property name="fontWeight">bold</property>
+                        <property name="color">gray</property>
+                        <property name="paddingTop">1pt</property>
+                        <property name="paddingBottom">8pt</property>
+                        <property name="textAlign">center</property>
+                        <text-property name="text" key="BalanceAllTitle">Balance All Title</text-property>
+                    </label>
+                </cell>
+            </row>
             <row id="12">
                 <cell id="13">
                     <table id="14">
                         <property name="fontFamily">"Lato"</property>
                         <property name="fontSize">8pt</property>
                         <property name="width">100%</property>
-                        <property name="dataSet">BalanceAlert</property>
+                        <property name="dataSet">BalanceAll</property>
                         <property name="theme">ThemesReportItems3.Modern Table</property>
                         <list-property name="boundDataColumns">
                             <structure>
                                 <property name="name">Cat1</property>
-                                <text-property name="displayName" key="Cat1Label">Type-Currency</text-property>
+                                <text-property name="displayName" key="Cat1Label">Currency</text-property>
                                 <expression name="expression" type="javascript">dataSetRow["Cat1"]</expression>
                                 <property name="dataType">string</property>
                             </structure>
@@ -209,7 +224,7 @@
                                 <property name="allowExport">true</property>
                             </structure>
                             <structure>
-                                <property name="name">Aggregation_1</property>
+                                <property name="name">Aggregation2</property>
                                 <property name="dataType">float</property>
                                 <simple-property-list name="aggregateOn">
                                     <value>Group1</value>
@@ -225,35 +240,20 @@
                             </structure>
                         </list-property>
                         <property name="pageBreakInterval">50</property>
-                        <list-property name="filter">
-                            <structure>
-                                <property name="operator">lt</property>
-                                <expression name="expr">row["Val2"]</expression>
-                                <simple-property-list name="value1">
-                                    <value>100000</value>
-                                </simple-property-list>
-                                <property name="filterTarget">ResultSet</property>
-                            </structure>
-                        </list-property>
                         <column id="30"/>
                         <column id="31"/>
-                        <column id="32">
-                            <list-property name="visibility">
-                                <structure>
-                                    <property name="format">all</property>
-                                    <expression name="valueExpr">true</expression>
-                                </structure>
-                            </list-property>
-                        </column>
+                        <column id="32"/>
                         <column id="33"/>
                         <header>
                             <row id="15">
                                 <property name="fontWeight">bold</property>
+                                <property name="color">#FFFFFF</property>
                                 <cell id="16">
                                     <property name="color">gray</property>
                                     <label id="46">
                                         <property name="fontFamily">"Lato"</property>
                                         <property name="color">white</property>
+                                        <property name="paddingTop">5pt</property>
                                         <property name="paddingBottom">5pt</property>
                                         <property name="textAlign">center</property>
                                         <text-property name="text" key="Cat2Label">Cat2Label</text-property>
@@ -264,6 +264,7 @@
                                     <label id="48">
                                         <property name="fontFamily">"Lato"</property>
                                         <property name="color">white</property>
+                                        <property name="paddingTop">5pt</property>
                                         <property name="paddingBottom">5pt</property>
                                         <property name="textAlign">center</property>
                                         <text-property name="text" key="Cat3Label">Cat3Label</text-property>
@@ -274,6 +275,7 @@
                                     <label id="50">
                                         <property name="fontFamily">"Lato"</property>
                                         <property name="color">white</property>
+                                        <property name="paddingTop">5pt</property>
                                         <property name="paddingBottom">5pt</property>
                                         <property name="textAlign">center</property>
                                         <text-property name="text" key="Val1Label">Val1Label</text-property>
@@ -284,6 +286,7 @@
                                     <label id="52">
                                         <property name="fontFamily">"Lato"</property>
                                         <property name="color">white</property>
+                                        <property name="paddingTop">5pt</property>
                                         <property name="paddingBottom">5pt</property>
                                         <property name="textAlign">center</property>
                                         <text-property name="text" key="Val2Label">Val2Label</text-property>
@@ -304,49 +307,50 @@
                             <property name="pageBreakAfter">auto</property>
                             <property name="pageBreakBefore">auto</property>
                             <property name="pageBreakInside">auto</property>
-                            <footer>
-                                <row id="40">
-                                    <property name="backgroundColor">#0079C1</property>
-                                    <property name="color">#FFFFFF</property>
-                                    <cell id="41">
-                                        <property name="colSpan">2</property>
-                                        <property name="rowSpan">1</property>
+                            <header>
+                                <row id="92">
+                                    <property name="fontFamily">"Verdana"</property>
+                                    <property name="fontSize">10pt</property>
+                                    <cell id="93">
                                         <data id="45">
                                             <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">10pt</property>
                                             <property name="fontWeight">bold</property>
+                                            <property name="paddingTop">1pt</property>
+                                            <property name="paddingLeft">5pt</property>
                                             <property name="textAlign">left</property>
                                             <property name="resultSetColumn">Cat1</property>
                                         </data>
                                     </cell>
-                                    <cell id="43">
-                                        <data id="88">
+                                    <cell id="94"/>
+                                    <cell id="95">
+                                        <data id="81">
                                             <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">10pt</property>
-                                            <property name="fontWeight">bold</property>
+                                            <property name="paddingRight">10pt</property>
                                             <structure name="numberFormat">
                                                 <property name="category">Currency</property>
-                                                <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
+                                                <property name="pattern">#,##0.00;(#,##0.00){RoundingMode=HALF_UP}</property>
                                             </structure>
                                             <property name="textAlign">right</property>
                                             <property name="resultSetColumn">Aggregation</property>
                                         </data>
                                     </cell>
-                                    <cell id="44">
-                                        <data id="89">
+                                    <cell id="96">
+                                        <data id="82">
                                             <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">10pt</property>
-                                            <property name="fontWeight">bold</property>
+                                            <property name="paddingRight">10pt</property>
                                             <structure name="numberFormat">
                                                 <property name="category">Currency</property>
                                                 <property name="pattern">#,##0.00{RoundingMode=HALF_UP}</property>
                                             </structure>
                                             <property name="textAlign">right</property>
-                                            <property name="resultSetColumn">Aggregation_1</property>
+                                            <property name="resultSetColumn">Aggregation2</property>
                                         </data>
                                     </cell>
                                 </row>
-                            </footer>
+                            </header>
                         </group>
                         <detail>
                             <row id="20">
@@ -357,6 +361,7 @@
                                         <property name="fontSize">10pt</property>
                                         <property name="color">#0000FF</property>
                                         <property name="textUnderline">underline</property>
+                                        <property name="paddingLeft">5pt</property>
                                         <property name="textAlign">left</property>
                                         <property name="resultSetColumn">Cat2</property>
                                         <list-property name="action">
@@ -372,6 +377,7 @@
                                     <data id="49">
                                         <property name="fontFamily">"Lato"</property>
                                         <property name="fontSize">10pt</property>
+                                        <property name="paddingLeft">5pt</property>
                                         <property name="textAlign">left</property>
                                         <property name="resultSetColumn">Cat3</property>
                                     </data>
@@ -380,6 +386,7 @@
                                     <data id="51">
                                         <property name="fontFamily">"Lato"</property>
                                         <property name="fontSize">10pt</property>
+                                        <property name="paddingRight">10pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00;(#,##0.00)</property>
@@ -392,38 +399,12 @@
                                     <data id="53">
                                         <property name="fontFamily">"Lato"</property>
                                         <property name="fontSize">10pt</property>
+                                        <property name="paddingRight">10pt</property>
                                         <structure name="numberFormat">
                                             <property name="category">Currency</property>
                                             <property name="pattern">#,##0.00;(#,##0.00)</property>
                                         </structure>
                                         <property name="textAlign">right</property>
-                                        <list-property name="highlightRules">
-                                            <structure>
-                                                <property name="operator">lt</property>
-                                                <property name="backgroundColor">#FF0000</property>
-                                                <property name="fontFamily">"Lato"</property>
-                                                <property name="fontStyle">normal</property>
-                                                <property name="fontWeight">bold</property>
-                                                <property name="color">#FFFFFF</property>
-                                                <property name="textUnderline">none</property>
-                                                <expression name="testExpr" type="javascript">row["Val2"]</expression>
-                                                <simple-property-list name="value1">
-                                                    <value type="javascript">35000</value>
-                                                </simple-property-list>
-                                            </structure>
-                                            <structure>
-                                                <property name="operator">between</property>
-                                                <property name="backgroundColor">#FFFF00</property>
-                                                <property name="fontFamily">"Lato"</property>
-                                                <property name="fontWeight">bold</property>
-                                                <property name="color">#808080</property>
-                                                <expression name="testExpr" type="javascript">row["Val2"]</expression>
-                                                <simple-property-list name="value1">
-                                                    <value type="javascript">35001</value>
-                                                </simple-property-list>
-                                                <expression name="value2" type="javascript">70000</expression>
-                                            </structure>
-                                        </list-property>
                                         <property name="resultSetColumn">Val2</property>
                                     </data>
                                 </cell>

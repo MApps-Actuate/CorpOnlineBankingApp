@@ -3260,16 +3260,38 @@
             <property name="tabs">
                 <tab-element name="47a33035-fe30-45a5-b7f5-5aca1c00ac14" id="3">
                     <property name="title">Treasury Insight</property>
-                    <property name="backgroundColor">auto</property>
+                    <property name="backgroundColor">RGB(255,255,255)</property>
                     <property name="sections">
                         <section id="976">
                             <property name="width">50%</property>
                             <property name="gadgets">
+                                <gadget name="d2021c35-8305-4348-9486-a2e87b0efc82" id="11">
+                                    <property name="height">389px</property>
+                                    <property name="title">6 Months Historical Rates</property>
+                                    <property name="externalGadgetURI">http://localhost:8700/iportal/publishSubscribe/CorpOnlineBanking_Publisher2.xml</property>
+                                    <property name="showTitle">false</property>
+                                    <property name="showBorder">true</property>
+                                    <property name="zIndex">3</property>
+                                    <property name="showScrollBar">false</property>
+                                    <property name="height">389px</property>
+                                    <property name="caption">
+                                        <gadget-caption id="12">
+                                            <property name="showCaption">true</property>
+                                            <property name="horizontalAlignment">left</property>
+                                            <property name="fontFamily">"Lato"</property>
+                                            <property name="fontSize">18pt</property>
+                                            <property name="fontWeight">normal</property>
+                                            <property name="fontStyle">normal</property>
+                                            <property name="color">#353535</property>
+                                        </gadget-caption>
+                                    </property>
+                                </gadget>
                                 <gadget name="16c61322-5767-415b-b89e-af02643b56fb" id="966">
                                     <property name="height">390px</property>
                                     <property name="title">Available Cash</property>
                                     <property name="externalGadgetURI">http://localhost:8700/iportal/publishSubscribe/CorpOnlineBanking_Subscriber.xml</property>
                                     <property name="showTitle">false</property>
+                                    <property name="showBorder">true</property>
                                     <property name="zIndex">9</property>
                                     <property name="showScrollBar">false</property>
                                     <property name="height">390px</property>
@@ -3277,32 +3299,12 @@
                                         <gadget-caption id="967">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>
                                             <property name="color">#353535</property>
                                             <property name="textUnderline">none</property>
-                                        </gadget-caption>
-                                    </property>
-                                </gadget>
-                                <gadget name="d2021c35-8305-4348-9486-a2e87b0efc82" id="11">
-                                    <property name="height">274px</property>
-                                    <property name="title">6 Months Historical Rates</property>
-                                    <property name="externalGadgetURI">http://localhost:8700/iportal/publishSubscribe/CorpOnlineBanking_Publisher2.xml</property>
-                                    <property name="showTitle">false</property>
-                                    <property name="zIndex">3</property>
-                                    <property name="showScrollBar">false</property>
-                                    <property name="height">274px</property>
-                                    <property name="caption">
-                                        <gadget-caption id="12">
-                                            <property name="showCaption">true</property>
-                                            <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
-                                            <property name="fontSize">18pt</property>
-                                            <property name="fontWeight">normal</property>
-                                            <property name="fontStyle">normal</property>
-                                            <property name="color">#353535</property>
                                         </gadget-caption>
                                     </property>
                                 </gadget>
@@ -3316,6 +3318,7 @@
                                     <property name="title">Loan Balance ($000's)</property>
                                     <property name="externalGadgetURI">http://localhost:8700/iportal/publishSubscribe/CorpOnlineBanking_Publisher1.xml</property>
                                     <property name="showTitle">false</property>
+                                    <property name="showBorder">true</property>
                                     <property name="zIndex">2</property>
                                     <property name="showScrollBar">false</property>
                                     <property name="height">389px</property>
@@ -3323,7 +3326,7 @@
                                         <gadget-caption id="10">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>
@@ -3347,19 +3350,19 @@
                                     </property>
                                 </gadget>
                                 <gadget name="Gadget_27fd9922-0cdc-4582-9879-8549a04ef9b3" id="968">
-                                    <property name="height">274px</property>
+                                    <property name="height">390px</property>
                                     <property name="title">Previous Day Balance</property>
                                     <property name="externalGadgetURI">^/Report Designs/BalanceChart1.rptdesign</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">true</property>
                                     <property name="zIndex">10</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">274px</property>
+                                    <property name="height">390px</property>
                                     <property name="caption">
                                         <gadget-caption id="969">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>
@@ -3379,7 +3382,7 @@
                                             <property name="gadgetType">viewer</property>
                                             <property name="externalContentRef">
                                                 <external-element-ref>
-                                                    <property name="sourceFile">^/Report Designs/BalanceChart1.rptdesign</property>
+                                                    <property name="sourceFile">/Applications/CorpOnlineBankingApp/Report Designs/BalanceChart1.rptdesign</property>
                                                 </external-element-ref>
                                             </property>
                                         </data-view>

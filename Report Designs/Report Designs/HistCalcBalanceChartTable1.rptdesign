@@ -280,7 +280,7 @@ function simulate() {
                     </text>
                     <extended-item extensionName="Chart" name="NewChart" id="9">
                         <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
- <ChartWithAxes version="2.6.1" type="Line Chart" subType="Overlay" dimension="0" units="Points" seriesThickness="10.0" orientation="1" unitSpacing="50.0">
+ <ChartWithAxes version="2.6.1" type="Line Chart" subType="Stacked" dimension="0" units="Points" seriesThickness="10.0" orientation="1" unitSpacing="50.0">
   <description value="">
    <font>
     <alignment/>
@@ -397,9 +397,9 @@ function simulate() {
     <seriesDefinitions sorting="0">
      <query definition="row[&quot;Cat1&quot;]"/>
      <seriesPalette>
-      <entries _body=",255,0,121,193"/>
-      <entries _body=",255,128,207,255"/>
-      <entries _body=",255,198,234,255"/>
+      <entries _body=",255,80,166,218"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,155,204,0"/>
       <entries _body=",255,128,255,128"/>
       <entries _body=",255,64,128,128"/>
       <entries _body=",255,128,128,192"/>
@@ -430,7 +430,7 @@ function simulate() {
       <entries _body=",255,255,255,255"/>
       <entries _body=",255,255,128,0"/>
      </seriesPalette>
-     <series _type="LineSeries" visible="true" seriesIdentifier="" labelPosition="0" stacked="false" paletteLineColor="true" curve="true">
+     <series _type="LineSeries" visible="true" seriesIdentifier="" labelPosition="0" stacked="true" paletteLineColor="true" curve="true">
       <label visible="false">
        <caption value=""/>
        <background _body=",0,255,255,255"/>
@@ -455,7 +455,7 @@ function simulate() {
       <markers type="2" size="4" visible="false">
        <outline visible="false"/>
       </markers>
-      <lineAttributes style="0" thickness="4" visible="true">
+      <lineAttributes style="0" thickness="2" visible="true">
        <color _body=",255,0,0,0"/>
       </lineAttributes>
      </series>
@@ -693,6 +693,7 @@ function simulate() {
                                     <label id="46">
                                         <property name="fontSize">9pt</property>
                                         <property name="fontWeight">bold</property>
+                                        <property name="color">#000000</property>
                                         <property name="paddingBottom">5pt</property>
                                         <text-property name="text" key="Cat1Label">Cat1Label</text-property>
                                     </label>
@@ -701,6 +702,7 @@ function simulate() {
                                     <label id="48">
                                         <property name="fontSize">9pt</property>
                                         <property name="fontWeight">bold</property>
+                                        <property name="color">#000000</property>
                                         <property name="paddingBottom">5pt</property>
                                         <text-property name="text" key="Val1Label">Val1Label</text-property>
                                     </label>
@@ -709,6 +711,7 @@ function simulate() {
                                     <label id="50">
                                         <property name="fontSize">9pt</property>
                                         <property name="fontWeight">bold</property>
+                                        <property name="color">#000000</property>
                                         <property name="paddingBottom">5pt</property>
                                         <text-property name="text" key="Val2Label">Val2Label</text-property>
                                     </label>
@@ -717,6 +720,7 @@ function simulate() {
                                     <label id="80">
                                         <property name="fontSize">9pt</property>
                                         <property name="fontWeight">bold</property>
+                                        <property name="color">#000000</property>
                                         <property name="paddingBottom">5pt</property>
                                         <property name="paddingRight">5pt</property>
                                         <property name="textAlign">right</property>
@@ -732,8 +736,7 @@ function simulate() {
                                 <list-property name="highlightRules">
                                     <structure>
                                         <property name="operator">eq</property>
-                                        <property name="backgroundColor">#C6EAFF</property>
-                                        <property name="color">#000000</property>
+                                        <property name="backgroundColor">#9BCC00</property>
                                         <expression name="testExpr" type="javascript">row["Cat1"]</expression>
                                         <simple-property-list name="value1">
                                             <value type="javascript">"Money Market Sweep"</value>
@@ -741,20 +744,18 @@ function simulate() {
                                     </structure>
                                     <structure>
                                         <property name="operator">eq</property>
-                                        <property name="backgroundColor">#80CFFF</property>
-                                        <property name="color">#000000</property>
+                                        <property name="backgroundColor">#66B0D1</property>
                                         <expression name="testExpr" type="javascript">row["Cat1"]</expression>
                                         <simple-property-list name="value1">
-                                            <value type="javascript">"International Index Fund #1"</value>
+                                            <value type="javascript">"Domestic Index Fund #1"</value>
                                         </simple-property-list>
                                     </structure>
                                     <structure>
                                         <property name="operator">eq</property>
-                                        <property name="backgroundColor">#0079C1</property>
-                                        <property name="color">#FFFFFF</property>
+                                        <property name="backgroundColor">#FFCC00</property>
                                         <expression name="testExpr" type="javascript">row["Cat1"]</expression>
                                         <simple-property-list name="value1">
-                                            <value type="javascript">"Domestic Index Fund #1"</value>
+                                            <value type="javascript">"International Index Fund #1"</value>
                                         </simple-property-list>
                                     </structure>
                                 </list-property>

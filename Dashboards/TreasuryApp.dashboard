@@ -24,19 +24,19 @@
                             <property name="width">50%</property>
                             <property name="gadgets">
                                 <gadget name="Gadget_a4f2d30c-a8c4-4f16-a503-9dac9c6ec0bf" id="15">
-                                    <property name="height">176px</property>
+                                    <property name="height">173px</property>
                                     <property name="title">Current Day Consolidated Summary by Currency</property>
                                     <property name="externalGadgetURI">^/Report Designs/BalanceSummary.rptdesign</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">true</property>
                                     <property name="zIndex">3</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">176px</property>
+                                    <property name="height">173px</property>
                                     <property name="caption">
                                         <gadget-caption id="16">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>
@@ -57,45 +57,6 @@
                                             <property name="externalContentRef">
                                                 <external-element-ref>
                                                     <property name="sourceFile">^/Report Designs/BalanceSummarybyCurrency.rptdesign</property>
-                                                </external-element-ref>
-                                            </property>
-                                        </data-view>
-                                    </property>
-                                </gadget>
-                                <gadget name="Gadget_208296bb-f2dd-478b-a6b3-ba273db8beae" id="21">
-                                    <property name="height">259px</property>
-                                    <property name="title">ALERT - Balances Less than 100K</property>
-                                    <property name="externalGadgetURI">^/Report Designs/BalanceAlert.rptdesign</property>
-                                    <property name="showTitle">false</property>
-                                    <property name="showBorder">true</property>
-                                    <property name="zIndex">5</property>
-                                    <property name="showScrollBar">false</property>
-                                    <property name="height">259px</property>
-                                    <property name="caption">
-                                        <gadget-caption id="22">
-                                            <property name="showCaption">true</property>
-                                            <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
-                                            <property name="fontSize">18pt</property>
-                                            <property name="fontWeight">normal</property>
-                                            <property name="fontStyle">normal</property>
-                                            <property name="color">#353535</property>
-                                            <property name="textUnderline">none</property>
-                                        </gadget-caption>
-                                    </property>
-                                    <property name="content">
-                                        <data-view id="23">
-                                            <list-property name="userProperties">
-                                                <structure>
-                                                    <property name="name">showViewerToolbar</property>
-                                                    <property name="type">boolean</property>
-                                                </structure>
-                                            </list-property>
-                                            <property name="showViewerToolbar">false</property>
-                                            <property name="gadgetType">viewer</property>
-                                            <property name="externalContentRef">
-                                                <external-element-ref>
-                                                    <property name="sourceFile">^/Report Designs/BalanceAlert.rptdesign</property>
                                                 </external-element-ref>
                                             </property>
                                         </data-view>
@@ -136,7 +97,7 @@
                                         <gadget-caption id="19">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>

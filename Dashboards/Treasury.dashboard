@@ -31,7 +31,7 @@
                                         <gadget-caption id="16">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>
@@ -70,7 +70,7 @@
                                         <gadget-caption id="22">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>
@@ -131,7 +131,7 @@
                                         <gadget-caption id="19">
                                             <property name="showCaption">true</property>
                                             <property name="horizontalAlignment">left</property>
-                                            <property name="fontFamily">"Source Sans Pro"</property>
+                                            <property name="fontFamily">"Lato"</property>
                                             <property name="fontSize">18pt</property>
                                             <property name="fontWeight">normal</property>
                                             <property name="fontStyle">normal</property>

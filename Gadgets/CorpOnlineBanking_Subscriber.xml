@@ -37,7 +37,7 @@ function callback(sender, message){
 	viewer = new actuate.Viewer("acviewer");
 	viewer.setReportName("/Applications/CorpOnlineBankingApp/Report Designs/Bullets1Sim.rptdesign");
 	viewer.setParameters({pBullets: message});
-	viewer.setWidth(667);
+	viewer.setWidth(715);
 	viewer.setHeight(390);
 	var uiOpts = new actuate.viewer.UIOptions();
 	uiOpts.enableToolBar(false);
