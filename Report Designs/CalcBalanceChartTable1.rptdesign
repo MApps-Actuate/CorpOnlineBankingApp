@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
     <property name="comments">Copyright (c) 2007 &lt;&lt;Your Company Name here>></property>
-    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201603260016</property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201601291629 Build &lt;@BUILD@></property>
     <html-property name="description">Creates a blank report with no predefined content.</html-property>
     <simple-property-list name="includeResource">
         <value>CorpOnlineBankingResources/CalcBalanceChartTable1</value>
@@ -1318,7 +1318,19 @@ $("[id$='sim300k']").hide();
                                         <property name="textAlign">center</property>
                                         <property name="textIndent">0em</property>
                                         <property name="contentType">html</property>
-                                        <text-property name="content"><![CDATA[<input type="button" value="Simulate" style="font-size: 10pt; font-family: Lato; width: 75px; height: 25px" onclick="javascript:simulate()"/>]]></text-property>
+                                        <text-property name="content"><![CDATA[<script>
+ $(function () {
+    $(".SimButton").hover(
+        function(){
+            $(this).css("background-color","lightgray");
+        },
+        function(){
+            $(this).css("background-color","white");
+        }
+    );
+});
+</script>
+<input class="SimButton" type="button" value="Simulate" style="font-size: 10pt; font-family: Lato; width: 75px; height: 25px; background-color: white; color: black; border: 2px solid lightgray; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; -moz-border-radius:6px; -webkit-border-radius:6px;" onclick="javascript:simulate();"/>]]></text-property>
                                     </text>
                                 </cell>
                                 <cell id="99"/>

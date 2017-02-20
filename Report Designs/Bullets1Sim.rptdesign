@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
     <property name="comments">Copyright (c) 2007 &lt;&lt;Your Company Name here>></property>
-    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201603260016</property>
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201601291629 Build &lt;@BUILD@></property>
     <html-property name="description">Creates a blank report with no predefined content.</html-property>
     <property name="units">in</property>
     <method name="initialize"><![CDATA[reportContext.setPersistentGlobalVariable("theOtherCounter1", new java.lang.Integer(0));
@@ -947,7 +947,19 @@ else {
                         <property name="textAlign">center</property>
                         <expression name="bookmark">"Tra"</expression>
                         <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<input type="button" value="Transact" style="font-size: 10pt; font-family: Lato; width: 75px; height: 25px"/>
+                        <text-property name="content"><![CDATA[<script>
+ $(function () {
+    $(".TranButton").hover(
+        function(){
+            $(this).css("background-color","lightgray");
+        },
+        function(){
+            $(this).css("background-color","white");
+        }
+    );
+});
+</script>
+<input class="TranButton" type="button" value="Transact" style="font-size: 10pt; font-family: Lato; width: 75px; height: 25px; background-color: white; color: black; border: 2px solid lightgray; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; -moz-border-radius:6px; -webkit-border-radius:6px;" onclick="javascript:alert('Transaction submitted');"/>
 ]]></text-property>
                     </text>
                 </cell>
@@ -1223,7 +1235,19 @@ else {
                         <property name="textAlign">center</property>
                         <expression name="bookmark">"Tra"</expression>
                         <property name="contentType">html</property>
-                        <text-property name="content"><![CDATA[<input type="button" value="Transact" style="font-size: 10pt; font-family: Verdana; width: 75px; height: 25px"/>
+                        <text-property name="content"><![CDATA[<script>
+ $(function () {
+    $(".TranButton").hover(
+        function(){
+            $(this).css("background-color","lightgray");
+        },
+        function(){
+            $(this).css("background-color","white");
+        }
+    );
+});
+</script>
+<input class="TranButton" type="button" value="Transact" style="font-size: 10pt; font-family: Lato; width: 75px; height: 25px; background-color: white; color: black; border: 2px solid lightgray; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; -moz-border-radius:6px; -webkit-border-radius:6px;" onclick="javascript:alert('Transactions submitted');"/>
 ]]></text-property>
                     </text>
                 </cell>
