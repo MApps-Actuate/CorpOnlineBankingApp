@@ -834,7 +834,8 @@ font-family:Lato" onchange="javascript: this.style.backgroundColor = '#deeefa';"
     );
 });
 </script>
-<input class="SimButton" type="button" value="Simulate" style="font-size: 10pt; font-family: Lato; width: 75px; height: 25px; background-color: lightgray" onclick="javascript:simulate();"/>]]></text-property>
+<input class="SimButton" type="button" value="Simulate" style="font-size: 10pt; font-family: Lato; width: 75px; height: 25px; background-color: lightgray; color: black; border: 2px solid lightgray;" onclick="javascript:simulate();"/>
+]]></text-property>
                                     </text>
                                 </cell>
                                 <cell id="92"/>
